@@ -1,3 +1,6 @@
 .hero-background {
     background:linear-gradient(180deg, rgba(15, 21, 27, 0.89) 0%, rgba(15, 21, 27, 0.69) 45.96%, rgba(15, 21, 27, 0.35) 88.74%, #0F151B 100%), url(../images/modern-luxury.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
