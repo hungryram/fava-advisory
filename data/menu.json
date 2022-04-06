@@ -1,0 +1,36 @@
+{
+    "menu": [
+      {
+        "name": "Home",
+        "link": null,
+        "menu": null
+      },
+      {
+        "name": "Buyers",
+        "link": null,
+        "menu": [
+          {
+            "name": "Search Homes",
+            "link": "/",
+            "menu": null
+          }
+        ]
+      },
+      {
+        "name": "Sellers",
+        "link": null,
+        "menu": [
+          {
+            "name": "Home Valuation",
+            "link": "/home-valuation/",
+            "menu": null
+          }
+        ]
+      },
+      {
+        "name": "Contact",
+        "link": "/contact",
+        "menu": null
+      }
+    ]
+  }
