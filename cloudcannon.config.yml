@@ -1,0 +1,13 @@
+collections_config:
+  data:
+    path: "data"
+  blog:
+    path: "content/blog"
+    output: true
+    url: "content/blog/[slug]"
+  documentation:
+    path: "content/documentation"
+    output: true
+    url: "content/documentation/[slug]"
+paths:
+  uploads: ./src/images

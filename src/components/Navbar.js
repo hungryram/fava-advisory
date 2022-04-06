@@ -16,7 +16,7 @@ export default function Navbar() {
                                     <img src={data.branding.logo} alt="" /> : <h1 className="uk-h2">Fava Advisory</h1>
                                 }
                             </Link>
-                            <ul className="uk-navbar-nav">
+                            <ul className={`uk-navbar-nav ${Styles.navbarLinks}`}>
                                 {menu.menu.map((node) => {
                                     return (
                                         <li>
