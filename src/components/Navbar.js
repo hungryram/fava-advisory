@@ -3,20 +3,19 @@ import data from "../../data/appearance.json"
 import menu from "../../data/menu.json"
 import { Link } from "gatsby"
 import * as Styles from "../styles/navbar.module.css"
+import Logo from "../images/fava-advisory-logo.png"
 
 export default function Navbar() {
     return (
-        <div className="uk-position-top uk-light">
+        <div className={`uk-position-top uk-padding-small ${Styles.mainNav}`}>
             <div className="uk-navbar-container uk-navbar-transparent">
                 <div className="uk-container uk-container-expand">
                     <div data-uk-navbar>
                         <div className="uk-navbar-left">
                             <Link to="/" className="uk-navbar-item uk-logo">
-                                {data.branding.logo ?
-                                    <img src={data.branding.logo} alt="" /> : <h1 className="uk-h2">Fava Advisory</h1>
-                                }
+                                    <img src={Logo} alt="" width={200}/>
                             </Link>
-                            <ul className={`uk-navbar-nav ${Styles.navbarLinks}`}>
+                            <ul className={`uk-navbar-nav uk-light ${Styles.navbarLinks}`}>
                                 {menu.menu.map((node) => {
                                     return (
                                         <li>
@@ -27,7 +26,7 @@ export default function Navbar() {
                             </ul>
                         </div>
                         <div className="uk-navbar-right">
-                            <Link className="uk-button uk-button-primary">Search Homes</Link>
+                            <Link className={Styles.ctaButton}>Search Homes</Link>
                         </div>
                     </div>
                 </div>

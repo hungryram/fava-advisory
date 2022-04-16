@@ -1,0 +1,60 @@
+.contact-form input,
+.contact-form textarea {
+    background: #F7F7F7;
+    margin-top: 8px;
+    border: 0;
+}
+
+.contact-form input {
+    height: 50px;
+}
+
+.submit-btn {
+    margin: 0;
+    border-bottom: 3px solid #000;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    cursor: pointer;
+    -webkit-appearance: none;
+    font-family: inherit;
+    border-radius: 0;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    font-size: .875rem;
+    line-height: 38px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #fff;
+}
+
+.contact-form label {
+    color: #000;
+}
+
+.social-border {
+    padding: 20px 15px;
+    border-top: 1px solid rgb(49, 49, 49);
+    border-left: 1px solid rgb(49, 49, 49);
+    border-bottom: 1px solid rgb(49, 49, 49);
+}
+
+.social-icon svg {
+    color: #fff;
+    transition: .3s;
+}
+
+.social-icon li:last-of-type a {
+    border-right: 1px solid rgb(49, 49, 49);
+}
+
+.social-icon a:hover {
+    transition: .3s;
+    background: white;
+}
+
+.social-icon a:hover svg {
+    color: #000;
+    transition: .3s;
+}

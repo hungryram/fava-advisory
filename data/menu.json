@@ -2,7 +2,7 @@
     "menu": [
       {
         "name": "Home",
-        "link": null,
+        "link": "/",
         "menu": null
       },
       {
