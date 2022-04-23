@@ -3,7 +3,8 @@ import Logo from "../images/fava-advisory-logo.png"
 import * as Styles from "../styles/footer.module.css"
 import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram"
 import { IconContext } from "@react-icons/all-files"
-import { AiOutlineFacebook } from "@react-icons/all-files/ai/AiOutlineFacebook"
+import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF"
+import { AiFillYoutube } from "@react-icons/all-files/ai/AiFillYoutube"
 
 export default function Footer() {
     return (
@@ -27,7 +28,12 @@ export default function Footer() {
                             </IconContext.Provider>
                             <IconContext.Provider value={{ size: '30px' }}>
                                 <a href="" className="uk-padding-small">
-                                    <AiOutlineFacebook />
+                                    <FaFacebookF />
+                                </a>
+                            </IconContext.Provider>
+                            <IconContext.Provider value={{ size: '30px' }}>
+                                <a href="https://www.youtube.com/channel/UC4r7ohm7SEJzqwLhXxb1zKg" className="uk-padding-small">
+                                    <AiFillYoutube />
                                 </a>
                             </IconContext.Provider>
                         </div>

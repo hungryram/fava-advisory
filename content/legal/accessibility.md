@@ -1,8 +1,9 @@
 ---
-last_update: November 12, 2020
-meta_description: ""
 title: Accessibility
-title_tag: ""
+last_update: November 12, 2020
+search_engine_optimization:
+    title_tag: ""
+    meta_description: ""
 ---
 We are committed to providing an accessible website. If you have difficulty accessing content, or having difficulty navigating throughout our website, please contact us immediately.
 

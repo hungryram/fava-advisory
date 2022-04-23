@@ -1,8 +1,9 @@
 ---
-last_update: November 12, 2020
-meta_description: ""
 title: Privacy Policy
-title_tag: ""
+last_update: November 12, 2020
+search_engine_optimization:
+    title_tag: ""
+    meta_description: ""
 ---
 ##### Personal Identification Information
 

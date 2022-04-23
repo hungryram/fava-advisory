@@ -22,17 +22,15 @@ export const pageQuery = graphql`
   legal {
     childMarkdownRemark {
       frontmatter {
-        meta_description
         last_update
         search_engine_optimization {
-          title_tag
+        meta_description
+        title_tag
         }
         title
-        title_tag
       }
       html
     }
   }
 }
-
 `

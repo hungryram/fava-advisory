@@ -6,7 +6,8 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap", {
+    "gatsby-plugin-sitemap", 
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         "icon": "src/images/icon.png"
@@ -44,6 +45,29 @@ module.exports = {
         "name": "team",
         "path": `${__dirname}/content/team`
       },
-    }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "blog",
+        "path": `${__dirname}/content/blog`
+      },
+    },
+    {
+      resolve: `gatsby-transformer-yaml`,
+      options: {
+        // Conditionally set the typeName so that we both use a lowercased and capitalized type name
+        typeName: ({ node }) => {
+          const name = node.sourceInstanceName
+          if (name === `blog`) {
+            return `Blog`
+          }
+          if (name === `parks`) {
+            return `park`
+          }
+          return name
+        },
+      },
+    },
   ]
 };
