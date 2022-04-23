@@ -28,6 +28,11 @@
         ]
       },
       {
+        "name": "Team",
+        "link": "/team",
+        "menu": null
+      },
+      {
         "name": "Contact",
         "link": "/contact",
         "menu": null

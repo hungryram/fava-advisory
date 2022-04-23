@@ -1,24 +1,10 @@
-<<<<<<< HEAD
-const { createFilePath } = require(`gatsby-source-filesystem`)
-const path = require(`path`);
-const slugify = require('slugify');
-=======
 const { createFilePath } = require("gatsby-source-filesystem");
->>>>>>> 48c41acef19aed3d9d383b7a36198cb363537faa
 
 exports.onCreateNode = async ({node, getNode, actions, store, cache, getCache, createContentDigest }) => {
 
     const { createNode } = actions;
 
-    const { createNodeField } = actions;
-    if(node.internal.type === 'MarkdownRemark') {
-       const slug = slugify(`${node.frontmatter.title}`);
-       createNodeField({
-          node,
-          name:  `slug`,
-          value: slug
-       })
-    }
+
     // Create Remote Image Files for IDX Listing Images
 
     if(node.internal.type === 'IDX') {
@@ -75,8 +61,6 @@ exports.onCreateNode = async ({node, getNode, actions, store, cache, getCache, c
             },
         })  
     }
-
-
 
     // Generate Legal Nodes
 
