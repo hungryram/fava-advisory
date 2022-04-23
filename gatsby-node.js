@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const path = require(`path`);
 const slugify = require('slugify');
+=======
+const { createFilePath } = require("gatsby-source-filesystem");
+>>>>>>> 48c41acef19aed3d9d383b7a36198cb363537faa
 
 exports.onCreateNode = async ({node, getNode, actions, store, cache, getCache, createContentDigest }) => {
 
@@ -38,9 +42,11 @@ exports.onCreateNode = async ({node, getNode, actions, store, cache, getCache, c
 
     if(node.internal.type === 'File' && node.sourceInstanceName === 'listings' && node.base !== '_index.md'){
         const markdownNode = await getNode(node.children[0])
+        const slug = createFilePath({ node, getNode, basePath: `pages` })
         createNode({
             ...markdownNode,
             id: `${node.id}-listing`,
+            slug: slug,
             parent: node.id,
             children: [`${markdownNode.id}`],
             internal: {
@@ -55,9 +61,11 @@ exports.onCreateNode = async ({node, getNode, actions, store, cache, getCache, c
 
     if(node.internal.type === 'File' && node.sourceInstanceName === 'blog' && node.base !== '_index.md'){
         const markdownNode = await getNode(node.children[0])
+        const slug = createFilePath({ node, getNode, basePath: `pages` })
         createNode({
             ...markdownNode,
             id: `${node.id}-blog`,
+            slug: slug,
             parent: node.id,
             children: [`${markdownNode.id}`],
             internal: {
@@ -74,9 +82,11 @@ exports.onCreateNode = async ({node, getNode, actions, store, cache, getCache, c
 
     if(node.internal.type === 'File' && node.sourceInstanceName === 'legal' && node.base !== '_index.md'){
         const markdownNode = await getNode(node.children[0])
+        const slug = createFilePath({ node, getNode, basePath: `pages` })
         createNode({
             ...markdownNode,
             id: `${node.id}-legal`,
+            slug: slug,
             parent: node.id,
             children: [`${markdownNode.id}`],
             internal: {
@@ -91,9 +101,11 @@ exports.onCreateNode = async ({node, getNode, actions, store, cache, getCache, c
 
     if(node.internal.type === 'File' && node.sourceInstanceName === 'offices' && node.base !== '_index.md'){
         const markdownNode = await getNode(node.children[0])
+        const slug = createFilePath({ node, getNode, basePath: `pages` })
         createNode({
             ...markdownNode,
             id: `${node.id}-offices`,
+            slug: slug,
             parent: node.id,
             children: [`${markdownNode.id}`],
             internal: {
@@ -108,9 +120,11 @@ exports.onCreateNode = async ({node, getNode, actions, store, cache, getCache, c
 
     if(node.internal.type === 'File' && node.sourceInstanceName === 'team' && node.base !== '_index.md'){
         const markdownNode = await getNode(node.children[0])
+        const slug = createFilePath({ node, getNode, basePath: `pages` })
         createNode({
             ...markdownNode,
             id: `${node.id}-team`,
+            slug: slug,
             parent: node.id,
             children: [`${markdownNode.id}`],
             internal: {
@@ -125,9 +139,11 @@ exports.onCreateNode = async ({node, getNode, actions, store, cache, getCache, c
 
     if(node.internal.type === 'File' && node.sourceInstanceName === 'partners' && node.base !== '_index.md'){
         const markdownNode = await getNode(node.children[0])
+        const slug = createFilePath({ node, getNode, basePath: `pages` })
         createNode({
             ...markdownNode,
             id: `${node.id}-partners`,
+            slug: slug,
             parent: node.id,
             children: [`${markdownNode.id}`],
             internal: {
