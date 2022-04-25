@@ -9,6 +9,13 @@ collections_config:
     _enabled_editors:
       - visual
       - content
+  pages:
+    path: "content/team"
+    output: true
+    url: "team/[slug]"
+    _enabled_editors:
+      - visual
+      - content
 collection_groups:
   - heading: Profile and Settings
     collections:
