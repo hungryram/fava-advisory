@@ -9,7 +9,7 @@ collections_config:
     _enabled_editors:
       - visual
       - content
-  pages:
+  team:
     path: "content/team"
     output: true
     url: "team/[slug]"
