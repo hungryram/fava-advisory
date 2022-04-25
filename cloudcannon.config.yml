@@ -12,7 +12,7 @@ collections_config:
   team:
     path: "content/team"
     output: true
-    url: "team/[slug]"
+    url: "content/team/[slug]"
     _enabled_editors:
       - visual
       - content
