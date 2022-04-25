@@ -4,7 +4,7 @@ categories:
 - Real Estate
 date: "2022-02-09T00:00:00Z"
 draft: false
-featured_image: /uploads/bathroom-bg3.jpg
+featured_image: /images/desk.jpg
 image_alt_tag: ""
 is_post: true
 search_engine_optimization:

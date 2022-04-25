@@ -4,7 +4,7 @@ categories:
 - Helpful Tips
 date: "2020-07-15T00:00:00Z"
 draft: false
-featured_image: /uploads/featuredone.jpg
+featured_image: /images/guide.jpg
 image_alt_tag: ""
 is_post: true
 search_engine_optimization:

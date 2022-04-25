@@ -2,12 +2,16 @@ import * as React from "react"
 import Layout from "../../components/Layout"
 import { graphql } from "gatsby"
 import showdown from "showdown"
+import Pagebanner from "../../components/Pagebanner"
 
 export default function Teamsingle({ data }) {
   const content = data.team.frontmatter
   const converter = new showdown.Converter();
     return (
         <Layout>
+          <Pagebanner
+            title={content.title}
+          />
             <div className="uk-section uk-section-large">
                 <div className="uk-container uk-container-large">
                     <div className="uk-child-width-1-2@s uk-grid-large" data-uk-grid>

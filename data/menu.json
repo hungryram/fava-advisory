@@ -33,6 +33,11 @@
         "menu": null
       },
       {
+        "name": "Blog",
+        "link": "/blog",
+        "menu": null
+      },
+      {
         "name": "Contact",
         "link": "/contact",
         "menu": null
