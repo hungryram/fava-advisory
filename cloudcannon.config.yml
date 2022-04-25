@@ -1,13 +1,37 @@
 collections_config:
   data:
     path: "data"
-  blog:
-    path: "content/blog"
+    label: "Profile and Settings"
+  pages:
+    path: "content/pages"
     output: true
-    url: "content/blog/[slug]"
-  documentation:
-    path: "content/documentation"
-    output: true
-    url: "content/documentation/[slug]"
+    url: "/[slug]"
+    _enabled_editors:
+      - visual
+      - content
+collection_groups:
+  - heading: Profile and Settings
+    collections:
+      - data
+  - heading: Pages
+    collections:
+      - pages
+      - listings
+      - team
+      - legal
+  - heading: Blog
+    collections:
+      - blog
 paths:
-  uploads: ./src/images
+  uploads: images
+_inputs:
+  body:
+    type: markdown
+  image:
+    type: image
+  logo:
+    type: image
+  favicon:
+    type: image
+  photo:
+    type: image
