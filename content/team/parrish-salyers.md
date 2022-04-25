@@ -1,5 +1,6 @@
 ---
 title: Parrish Salyers
+photo: ../../images/Parrish-headshot.jpg
 search_engine_optimization:
     title_tag: Parrish Salyers
     meta_description:

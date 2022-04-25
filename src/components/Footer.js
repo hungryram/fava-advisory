@@ -5,6 +5,7 @@ import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram
 import { IconContext } from "@react-icons/all-files"
 import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF"
 import { AiFillYoutube } from "@react-icons/all-files/ai/AiFillYoutube"
+import { Link } from "gatsby"
 
 export default function Footer() {
     return (
@@ -13,7 +14,7 @@ export default function Footer() {
                 <div className="uk-container uk-container-xlarge">
                     <div className="uk-child-width-1-3@s uk-flex-middle" data-uk-grid>
                         <div className="uk-text-left@s">
-                            <img src={Logo} alt="" width={200} />
+                            <Link to="/"><img src={Logo} alt="" width={200} /></Link>
                         </div>
                         <div>
                             <h4>Subscribe to our newsletter</h4>

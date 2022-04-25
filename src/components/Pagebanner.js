@@ -1,13 +1,23 @@
 import * as React from "react"
 
-export default function Pagebanner({ pageTitle }) {
+export default function Pagebanner({ title }) {
     return (
-        <div class="uk-cover-container">
-            <img src="https://res.cloudinary.com/hungryram19/image/upload/v1637596762/navid-ziaolhagh/ambiance-home/modern-gray-interior.jpg" alt="" data-uk-cover />
-            <canvas height="400"></canvas>
-            <div class="uk-overlay-baseof uk-position-cover"></div>
-            <div class="uk-overlay uk-position-center uk-light uk-text-center">
-                <h1 class="uk-text-uppercase">{pageTitle}</h1>
+        <div>
+            <div className="uk-section uk-section-xlarge" style={{ backgroundColor: '#111820' }}>
+                <div className="uk-container">
+                    <div data-uk-grid>
+                        <div className="uk-width-1-2@s">
+                            <div class="uk-text-left uk-light">
+                                <h1 class="uk-text-uppercase uk-heading-small">{title}</h1>
+                            </div>
+                        </div>
+                        <div className="uk-width-1-2@s">
+                            <div class="uk-light uk-margin-large-top">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur repudiandae, consequuntur fuga vel mollitia nemo ab vitae tempora totam facilis?`</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

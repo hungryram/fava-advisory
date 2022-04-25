@@ -1,18 +1,21 @@
 import * as React from "react"
 import Layout from "../../components/Layout"
 import { graphql } from "gatsby"
+import showdown from "showdown"
 
 export default function Teamsingle({ data }) {
+  const content = data.team.frontmatter
+  const converter = new showdown.Converter();
     return (
         <Layout>
-            <div className="uk-section">
+            <div className="uk-section uk-section-large">
                 <div className="uk-container uk-container-large">
-                    <div className="uk-child-width-1-2@s" data-uk-grid>
+                    <div className="uk-child-width-1-2@s uk-grid-large" data-uk-grid>
                         <div>
-
+                            <img src={content.photo} alt="" />
                         </div>
                         <div>
-                            <div dangerouslySetInnerHTML={{ __html: data.team.childMarkdownRemark.html }} />
+                            <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(data.team.rawMarkdownBody) }} />
                         </div>
                     </div>
                 </div>
@@ -22,19 +25,17 @@ export default function Teamsingle({ data }) {
 }
 
 export const pageQuery = graphql`
-{
-    team {
-      childMarkdownRemark {
-        html
-        frontmatter {
-          search_engine_optimization {
-            title_tag
-            meta_description
-          }
-          title
-        }
+query($id: String) {
+  team(id: { eq: $id}){
+    rawMarkdownBody
+    frontmatter {
+      photo
+      title
+      search_engine_optimization {
+        title_tag
       }
     }
   }
-  
+}
+
 `

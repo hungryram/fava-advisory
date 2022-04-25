@@ -1,5 +1,6 @@
 ---
 title: Scott Fava
+photo: /images/scott-fava.jpg
 search_engine_optimization:
     title_tag: Scott Fava
     meta_description:

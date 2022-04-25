@@ -1,5 +1,6 @@
 ---
 title: Christine LaPuma
+photo: /images/Christine-headshot.jpg
 search_engine_optimization:
     title_tag: Christine LaPuma
     meta_description:
