@@ -55,19 +55,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-yaml`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        // Conditionally set the typeName so that we both use a lowercased and capitalized type name
-        typeName: ({ node }) => {
-          const name = node.sourceInstanceName
-          if (name === `blog`) {
-            return `Blog`
-          }
-          if (name === `parks`) {
-            return `park`
-          }
-          return name
-        },
+        "name": "listings",
+        "path": `${__dirname}/content/listings`
       },
     },
   ]

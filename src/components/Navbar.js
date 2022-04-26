@@ -26,7 +26,7 @@ export default function Navbar() {
                             </ul>
                         </div>
                         <div className="uk-navbar-right">
-                            <Link className={Styles.ctaButton}>Search Homes</Link>
+                            <Link to="/listings" className={Styles.ctaButton}>Exclusive Listings</Link>
                         </div>
                     </div>
                 </div>

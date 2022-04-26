@@ -6,6 +6,7 @@ import { IconContext } from "@react-icons/all-files"
 import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF"
 import { AiFillYoutube } from "@react-icons/all-files/ai/AiFillYoutube"
 import { Link } from "gatsby"
+import info from "../../data/profile.json"
 
 export default function Footer() {
     return (
@@ -22,21 +23,28 @@ export default function Footer() {
 
                         </div>
                         <div>
-                            <IconContext.Provider value={{ size: '30px' }}>
-                                <a href="" className="uk-padding-small">
-                                    <AiOutlineInstagram />
-                                </a>
-                            </IconContext.Provider>
-                            <IconContext.Provider value={{ size: '30px' }}>
-                                <a href="" className="uk-padding-small">
-                                    <FaFacebookF />
-                                </a>
-                            </IconContext.Provider>
-                            <IconContext.Provider value={{ size: '30px' }}>
-                                <a href="https://www.youtube.com/channel/UC4r7ohm7SEJzqwLhXxb1zKg" className="uk-padding-small">
-                                    <AiFillYoutube />
-                                </a>
-                            </IconContext.Provider>
+                            {info.social_media.instagram &&
+                                <IconContext.Provider value={{ size: '30px' }}>
+                                    <a href={info.social_media.instagram} className="uk-padding-small" target="_blank" rel="noopener noreferrer">
+                                        <AiOutlineInstagram />
+                                    </a>
+                                </IconContext.Provider>
+
+                            }
+                            {info.social_media.facebook &&
+                                <IconContext.Provider value={{ size: '30px' }}>
+                                    <a href={info.social_media.facebook} className="uk-padding-small" target="_blank" rel="noopener noreferrer">
+                                        <FaFacebookF />
+                                    </a>
+                                </IconContext.Provider>
+                            }
+                            {info.social_media.youtube &&
+                                <IconContext.Provider value={{ size: '30px' }}>
+                                    <a href={info.social_media.youtube} className="uk-padding-small" target="_blank" rel="noopener noreferrer">
+                                        <AiFillYoutube />
+                                    </a>
+                                </IconContext.Provider>
+                            }
                         </div>
                     </div>
                 </div>
@@ -45,7 +53,7 @@ export default function Footer() {
                 <div className="uk-container uk-container-xlarge">
                     <div className="uk-child-width-1-3@s uk-light" data-uk-grid>
                         <div>
-                            <ul className="uk-listt">
+                            <ul className="uk-list">
                                 <li className="uk-display-inline uk-padding-small">
                                     <a href="">Privacy Policy</a>
                                 </li>
@@ -55,7 +63,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className="uk-text-center">
-                            <p>Copyright</p>
+                            <p className="uk-text-small">&copy; Copyright {new Date().getFullYear()} &middot; {info.company} &middot; Built by <Link to="https://www.hungryram.com/" className="uk-link-reset">Hungry Ram LLC</Link></p>
                         </div>
                     </div>
                 </div>
