@@ -17,7 +17,7 @@ export default function Contact() {
                     <div className="uk-light">
                         <h1 className="uk-heading-small uk-animation-slide-top-small">Let's get in touch</h1>
                     </div>
-                    <div className="uk-margin-large-top">
+                    <div className="uk-margin-large-top"> 
                         <div data-uk-grid>
                             <div className="uk-width-1-3@s uk-animation-slide-left-small">
                                 <div>
