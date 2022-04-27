@@ -1,9 +1,9 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import Features from "../templates/home/Features"
-import Hero from "../templates/home/Hero"
-import Intro from "../templates/home/Intro"
-import Team from "../templates/home/Team"
+import Features from "../components/home/Features"
+import Hero from "../components/home/Hero"
+import Intro from "../components/home/Intro"
+import Team from "../components/home/Team"
 
 export default function Home() {
   return (
