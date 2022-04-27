@@ -16,6 +16,11 @@
         "menu": null
       },
       {
+        "name": "Home Valuation",
+        "link": "/home-valuation",
+        "menu": null
+      },
+      {
         "name": "Contact",
         "link": "/contact",
         "menu": null

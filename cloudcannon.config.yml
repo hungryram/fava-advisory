@@ -13,6 +13,14 @@ collections_config:
     path: "content/team"
     output: true
     url: "content/team/[slug]"
+  listings:
+    path: "content/listings"
+    output: true
+    url: "content/listings/[slug]"
+    icon: house
+    add_options:
+      - name: Add Listings
+        href: "cloudcannon:explore/content/listings/.md🆕/content/schemas/listings.md"
 collection_groups:
   - heading: Profile and Settings
     collections:
