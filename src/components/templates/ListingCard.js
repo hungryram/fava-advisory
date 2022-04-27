@@ -2,9 +2,9 @@ import { graphql, Link, StaticQuery } from "gatsby"
 import * as React from "react"
 
 export default function ListingCard() {
-    return (
-        <StaticQuery
-            query={graphql`
+  return (
+    <StaticQuery
+      query={graphql`
             {
                 allListing {
                   nodes {
@@ -16,15 +16,19 @@ export default function ListingCard() {
                 }
               }
             `}
-            render = {data=> (
-                <>
-                {data.allListing.nodes.map((node) => {
-                    return (
-                        <Link to={"listings" + node.slug}>{node.frontmatter.title}</Link>
-                    )
-                })}
-                </>
-            )}
-        />
-    )
+      render={data => (
+        <>
+          <div className="uk-section">
+            <div className="uk-container">
+              {data.allListing.nodes.map((node) => {
+                return (
+                  <Link to={"/listings" + node.slug}>{node.frontmatter.title}</Link>
+                )
+              })}
+            </div>
+          </div>
+        </>
+      )}
+    />
+  )
 }
