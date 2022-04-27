@@ -38,13 +38,434 @@ paths:
   uploads: static/images
   static: static
 _inputs:
+  source:
+    label: Source Link
+  zip-codes:
+    label: Zip Code
+  equal_housing_logo:
+    type: switch
+  mls_logo:
+    type: switch
+  realtor_logo:
+    type: switch
+  call_to_action_link:
+    type: url
+  call_to_action_label:
+    type: text
+  remove_call_to_action:
+    type: checkbox
+  is_post:
+    hidden: true
+  idx_title_background_color:
+    type: color
+  idx_title_text_color:
+    type: color
+  background_color:
+    type: color
+  custom_css:
+    type: textarea
+    comment: Custom CSS code. Include the style tag
+  custom_script:
+    type: textarea
+    comment: Custom script tag in the header
+  custom_closing_script:
+    type: textarea
+    comment: Custom script tag before the closing body tag
+  main_photo:
+    type: image
+  onefivetwo:
+    type: image
+    label: 152x152
+  onefourfour:
+    label: 144x144
+    type: image
+  onetwotwo:
+    label: 122x122
+    type: image
+  oneonefour:
+    label: 114x114
+    type: image
+  oneeightzero:
+    label: 180x180
+    type: image
+  seventwo:
+    label: 72x72
+    type: image
+  form_disclaimer:
+    type: markdown
+  languages:
+    type: array
+  specialty:
+    type: array
+    label: Specialties
+  website:
+    type: text
+    comment: Include the full URL with https://
   body:
     type: markdown
-  image:
-    type: image
   logo:
     type: image
   favicon:
     type: image
+  dark_logo:
+    type: image
+  links:
+    type: color
+  accent:
+    type: color
+  disclaimer:
+    type: textarea
+  footer_bio:
+    type: textarea
+  video_link:
+    comment: It is recommended to host videos elsewhere and paste the link here.
+    type: text
+  price:
+    comment: Include the dollar sign.
   photo:
     type: image
+  hoa:
+    comment: Include the dollar sign and any additional information.
+    label: HOA
+  url:
+    type: text
+    comment: URL is generated automatically on page creation. Changing the URL can cause page link to break.
+  youtube_link:
+    type: text
+    comment: Grab the video code from the URL. i.e https://www.youtube.com/watch?v=xxxxxxxxxxx
+  testimonial:
+    type: markdown
+  mls_number:
+    type: text
+    label: MLS Number
+  open_house_date:
+    type: text
+  date:
+    type: date
+  featured:
+    type: select
+    options:
+      values:
+        - Featured
+  license_number:
+    type: text
+  fax_number:
+    type: text
+  cities:
+    label: City
+  column_size:
+    type: select
+    options:
+      values:
+        - 2-3@m
+  slide_animation:
+    type: select
+    options:
+      values:
+        - slide
+        - fade
+        - scale
+        - pull
+        - push
+  filter_animation:
+    type: select
+    options:
+      values:
+        - slide
+        - fade
+        - delayed-fade
+  layout:
+    type: select
+    label: Choose template
+    options:
+      values:
+        - pages
+        - contact
+        - press
+        - testimonials
+        - home-valuation
+        - thank-you
+  status:
+    type: select
+    options:
+      values:
+        - Sold
+        - Active
+        - Pending
+        - Available
+        - Negotiating
+        - In Contract
+        - Coming Soon
+        - Auction
+        - Rental
+  properties:
+    type: select
+    label: Property Type
+    options:
+      values:
+        - Acreage and Land
+        - Apartment
+        - Commercial
+        - Condo
+        - Townhome
+        - Co-op
+        - Duplex
+        - Farmland
+        - Farmranch
+        - Cabin
+        - Mobile Home
+        - Multi-Family
+        - New Construction
+        - Rental
+        - Single Family
+        - Time Share
+        - Vacation Home
+  interior_rooms:
+    type: multiselect
+    options:
+      values:
+        - Family Room
+        - Laundry Room
+        - Master Bath
+        - Office
+        - Recreation Room
+        - Sauna
+        - Steam Room
+        - Walk-in Closet
+        - Dining Room
+        - Kitchen
+        - Mud Room
+        - Pantry
+        - Workshop
+        - Sun Room
+        - Basement
+  interior_appliances:
+    type: multiselect
+    options:
+      values:
+        - Dishwasher
+        - Freezer
+        - Microwave
+        - Oven
+        - Trash Compactor
+        - Water Heater
+        - Wine Refrigerator
+        - Ceiling Fan(s)
+        - Dryer
+        - Garbage Disposal
+        - Range
+        - Refrigerator
+        - Washer
+        - Water Softener
+  exterior_details:
+    type: multiselect
+    options:
+      values:
+        - Pool
+        - Spa/Hot Tub
+        - Gated
+        - Tandem
+        - RV Possible
+        - Carport
+        - Solar Panels (Owned)
+        - Solar Panels (Leased)
+        - Tennis Court
+        - Basketball Court
+        - Fireplace
+        - Greenhouse
+        - Guest House
+        - Workshop
+        - Pool House
+        - Barn
+        - Shed
+        - Gazebo
+  exterior_roof:
+    type: multiselect
+    options:
+      values:
+        - None
+        - Tile
+        - Clay
+        - Polyurethane
+        - Composition
+        - Barrel/Truss
+        - Bituthene
+        - Metal
+        - Foam
+        - Slate
+        - Bitumen
+        - Mansard
+        - Shingles
+        - Unreinforced Masonry
+        - Shake
+        - Wood Frame
+        - Elastomeic
+        - Rolled Composition
+        - Rock
+        - Concrete
+        - Fiberglass
+        - Wood Shakes
+        - Tar and Gravel
+        - Flat/Low Pitch
+        - Aluminum Over Tar
+  community_features_choice:
+    type: multiselect
+    options:
+      values:
+        - Roof Deck
+        - Storage Room
+        - Golf Course
+        - On Site Exercise
+        - Community Park
+        - Community Spa
+        - Walking/Biking/Hiking Trail
+        - Community Activity Center
+        - Community Raquetball
+        - Community Tennis
+        - Gated Community
+        - Parking Garage
+        - Pets Allowed
+        - Senior Community
+        - Doorman
+        - Media Room
+        - Bike Room
+        - Community Water/Lake/River Access
+        - Recreation Facilities
+        - Community Swimming Pool
+        - Community Fitness Center
+        - Elevator
+        - Concierge
+        - Laundry Room
+        - Security Features
+        - Age Restricted Community
+        - Community Playground
+  additional_exterior_details:
+    type: array
+  additional_interior_details:
+    type: array
+  additional_community_details:
+    type: array
+  interior_flooring:
+    type: multiselect
+    options:
+      values:
+        - Carpet
+        - Hardwood
+        - Linoleum/Vinyl
+        - Tile
+        - Concrete
+        - Laminate
+  template:
+    hidden: true
+  states:
+    label: State
+    type: select
+    options:
+      values:
+        - AL
+        - AK
+        - AZ
+        - AR
+        - CA
+        - CO
+        - CT
+        - DE
+        - FL
+        - GA
+        - HI
+        - ID
+        - IL
+        - IN
+        - IA
+        - KS
+        - KY
+        - LA
+        - ME
+        - MD
+        - MA
+        - MI
+        - MN
+        - MS
+        - MO
+        - MT
+        - NE
+        - NV
+        - NH
+        - NJ
+        - NM
+        - NY
+        - NC
+        - ND
+        - OH
+        - OK
+        - OR
+        - PA
+        - RI
+        - SC
+        - SD
+        - TN
+        - TX
+        - UT
+        - VT
+        - VA
+        - WA
+        - WV
+        - WI
+        - WY
+_structures:
+  menu:
+    values:
+      - value:
+          name:
+          link:
+          menu:
+  sidebar:
+    values:
+      - label: "Blog Category"
+        value:
+          _type: blog-category
+          template: side-blog-category
+          comment: Nothing to configure, categories will display.
+      - label: "Custom Text"
+        value:
+          _type: custom-text
+          template: custom-text
+          body:
+      - label: "Custom Code"
+        value:
+          _type: custom-code
+          template: custom-code
+          textarea:
+      - label: "Latest Posts"
+        value:
+          _type: latest-posts
+          template: latest-posts
+      - label: "Listings"
+        value:
+          _type: listings
+          template: sidebar-listings
+  additional_links:
+    style: 'modal'
+    type: array
+    values:
+        value: 
+          name:
+          link:
+  gallery:
+    style: 'modal'
+    type: array
+    values:
+        value: 
+          image:
+  file_attachments:
+    values:
+      - label: Attachment
+        value:
+          name:
+          document:
+  important_documents:
+    values:
+      - label: documents
+        value:
+          name:
+          document:
