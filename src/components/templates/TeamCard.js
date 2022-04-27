@@ -1,5 +1,6 @@
 import { graphql, Link, StaticQuery } from "gatsby"
 import * as React from "react"
+import * as Styles from "../../styles/team.module.css"
 
 export default function TeamCard() {
     return (
@@ -30,11 +31,12 @@ export default function TeamCard() {
                                     return (
                                         <div>
                                             <Link to={"/team" + node.slug}>
-                                                <div className="uk-card uk-card-default">
+                                                <div className={`uk-card ${Styles.teamCard}`}>
                                                     <div className="uk-card-media-top uk-cover-container">
                                                         <canvas height="500"></canvas>
-                                                        <img src={node.frontmatter.photo} alt="" data-uk-cover />
-                                                        <div className="uk-overlay-agent uk-position-cover"></div>
+                                                        <div className={Styles.imageContainer}>
+                                                            <img src={node.frontmatter.photo} alt={node.frontmatter.title} className={Styles.image} data-uk-cover />
+                                                        </div>
 
                                                     </div>
                                                     <div className="uk-overlay uk-position-bottom uk-light uk-text-center">

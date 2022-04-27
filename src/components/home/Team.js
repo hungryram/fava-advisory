@@ -11,7 +11,7 @@ export default function Team() {
                 <div className="uk-flex uk-flex-center" data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 200">
                     <div className="uk-width-2xlarge uk-text-center uk-light">
                         <h2>The Advisory Team</h2>
-                        <p>The team is a dynamic group of full-time real estate professionals who provide a highly personalized advisory service focusing on curated real estate advice based on current marketing trends and creative marketing strategies. </p>
+                        <p>The Fava Advisory Team has closed over half a billion dollars' worth of sales and continue to stand at the forefront of this constantly evolving industry as tech and social media make adaptation a necessity.</p>
                     </div>
                 </div>
             </div>
