@@ -68,3 +68,7 @@ body {
     transition: transform ease .5s;
     transform: scale(1.2);
 }
+
+.uk-overlay-primary {
+    background: rgba(0,0,0,0.45);
+}
