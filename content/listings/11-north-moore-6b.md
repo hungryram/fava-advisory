@@ -11,8 +11,16 @@ featured:
 listing_agent:
 draft: false
 photos:
-  main_photo:
+  main_photo: /images/11 North Moore Street Apt 6B__2.jpg
   gallery:
+    - image: /images/11 North Moore Street Apt 6B__2.jpg
+    - image: /images/11 North Moore Street Apt 6B__3.jpg
+    - image: /images/11 North Moore Street Apt 6B__4.jpg
+    - image: /images/11 North Moore Street Apt 6B__5.jpg
+    - image: /images/11 North Moore Street Apt 6B__6.jpg
+    - image: /images/11 North Moore Street Apt 6B__7.jpg
+    - image: /images/11 North Moore Street Apt 6B__8.jpg
+    - image: /images/11 North Moore Street Apt 6B__10.jpg
 details:
   bathrooms: '3'
   bedrooms: '3'

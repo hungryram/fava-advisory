@@ -11,8 +11,17 @@ featured:
 listing_agent:
 draft: false
 photos:
-  main_photo:
+  main_photo: /images/11 North Moore Apt 2B__1.jpg
   gallery:
+    - image: /images/11 North Moore Apt 2B__1.jpg
+    - image: /images/11 North Moore Apt 2B__3.jpg
+    - image: /images/11 North Moore Apt 2B__4.jpg
+    - image: /images/11 North Moore Apt 2B__7.jpg
+    - image: /images/11 North Moore Apt 2B__9.jpg
+    - image: /images/11 North Moore Apt 2B__10.jpg
+    - image: /images/11 North Moore Apt 2B__12.jpg
+    - image: /images/11 North Moore Apt 2B__13.jpg
+    - image: /images/11 North Moore Apt 2B__14.jpg
 details:
   bathrooms: '3'
   bedrooms: '3'
