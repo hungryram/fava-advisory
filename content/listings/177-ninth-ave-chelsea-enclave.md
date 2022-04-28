@@ -11,12 +11,13 @@ featured:
 listing_agent:
 draft: false
 photos:
-  main_photo: /images/niz3197-edit.jpg
+  main_photo: /images/177 Ninth Avenue Apt 5E__1.jpg
   gallery:
-    - image: /images/niz3197-edit.jpg
-    - image: /images/niz3199.jpg
-    - image: /images/niz3235-edit.jpg
-    - image: /images/niz3239.jpg
+    - image: /images/177 Ninth Avenue Apt 5E__1.jpg
+    - image: /images/177 Ninth Avenue Apt 5E__3.jpg
+    - image: /images/177 Ninth Avenue Apt 5E__8.jpg
+    - image: /images/177 Ninth Avenue Apt 5E__9.jpg
+    - image: /images/177 Ninth Avenue Apt 5E__10.jpg
 details:
   bathrooms: '1.5'
   bedrooms: '1'

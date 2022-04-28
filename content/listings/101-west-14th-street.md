@@ -11,12 +11,22 @@ featured:
 listing_agent:
 draft: false
 photos:
-  main_photo: /images/niz3197-edit.jpg
+  main_photo: /images/101 W 14th_Living_Final_2K-resized.jpg
   gallery:
-    - image: /images/niz3197-edit.jpg
-    - image: /images/niz3199.jpg
-    - image: /images/niz3235-edit.jpg
-    - image: /images/niz3239.jpg
+    - image: /images/101W14 kitchen.jpg
+    - image: /images/101W14 new dev 1.jpg
+    - image: /images/101W14 new dev 2.jpg
+    - image: /images/101W14 new dev 3.jpg
+    - image: /images/101W14 new dev 4.jpg
+    - image: /images/101W14 new dev 5.jpg
+    - image: /images/101W14 new dev 1.jpg
+    - image: /images/GIM1503_6thAve_S010_EXT_Hero_Final 2000-crop-resized.jpg
+    - image: /images/GIM1503_6thAve_S020_INT_1301PHTerrace_Final_2K-resized.jpg
+    - image: /images/GIM1503_6thAve_S030_INT_Facade_Final 2000-resized.jpg
+    - image: /images/GIM1503_6thAve_S130_INT_1006MasterBed_Final_2K-resized.jpg
+    - image: /images/GIM1503_6thAve_S140_EXT_Rooftop_2k_NoBulkhead_-resized.jpg
+    - image: /images/GIM1503_6thAve_S150_EXT_Rooftop_2k-resized.jpg
+    - image: /images/GIM1503_6thAve_S160_EXT_Rooftop_2K-resized.jpg
 details:
   bathrooms: ''
   bedrooms: ''
