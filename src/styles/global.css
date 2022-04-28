@@ -33,3 +33,34 @@ body {
     line-height: 1.5;
 }
 
+.image-wrapper {
+    transition: transform ease .5s;
+
+}
+
+.image-wrapper:after {
+    box-shadow: inset 0px 0px 0px 0px #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: ease .5s;
+    width: 100%;
+}
+
+.image-wrapper:hover:after {
+    box-shadow: inset 0px 0px 0px 11px #fff;
+    content: '';
+    transition: ease .5s;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.uk-transition-scale-up:hover {
+    transition: transform ease .5s;
+    transform: scale(1.2);
+}

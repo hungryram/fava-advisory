@@ -31,11 +31,11 @@ export default function TeamCard() {
                                     return (
                                         <div>
                                             <Link to={"/team" + node.slug}>
-                                                <div className={`uk-card ${Styles.teamCard}`}>
-                                                    <div className="uk-card-media-top uk-cover-container">
-                                                        <canvas height="500"></canvas>
-                                                        <div className={Styles.imageContainer}>
-                                                            <img src={node.frontmatter.photo} alt={node.frontmatter.title} className={Styles.image} data-uk-cover />
+                                                <div className={`uk-inline-clip  ${Styles.teamCard}`}>
+                                                    <div className="uk-cover-container">
+                                                        <canvas height="500" width="400"></canvas>
+                                                        <div className="uk-transition-toggle image-wrapper">
+                                                            <img className={`uk-transition-scale-up uk-transition-opaque ${Styles.image}`} src={node.frontmatter.photo} alt="" data-uk-cover/>
                                                         </div>
 
                                                     </div>
