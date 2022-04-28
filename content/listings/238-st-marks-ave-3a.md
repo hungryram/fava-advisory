@@ -11,7 +11,7 @@ featured:
 listing_agent:
 draft: false
 photos:
-  main_photo: /images/niz3197-edit.jpg
+  main_photo: 
   gallery:
     - image: /images/niz3197-edit.jpg
     - image: /images/niz3199.jpg

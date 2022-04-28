@@ -11,12 +11,16 @@ featured:
 listing_agent:
 draft: false
 photos:
-  main_photo: /images/niz3197-edit.jpg
+  main_photo: /images/IMG_5181_HIGH RES.jpg
   gallery:
-    - image: /images/niz3197-edit.jpg
-    - image: /images/niz3199.jpg
-    - image: /images/niz3235-edit.jpg
-    - image: /images/niz3239.jpg
+    - image: /images/IMG_5181_HIGH RES.jpg
+    - image: /images/IMG_5196 V2_HIGH RES.jpg
+    - image: /images/IMG_5208_HIGH RES.jpg
+    - image: /images/IMG_5217_HIGH RES.jpg
+    - image: /images/IMG_5255_HIGH RES.jpg
+    - image: /images/IMG_5266_HIGH RES.jpg
+    - image: /images/IMG_5314_HIGH RES.jpg
+    - image: /images/IMG_5326_HIGH RES.jpg
 details:
   bathrooms: '3.5'
   bedrooms: '3'

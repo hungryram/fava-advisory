@@ -24,6 +24,10 @@ body {
     }
 }
 
+.accent {
+    color: #111820;
+}
+
 .dark-background {
     background: #111820;
 }
