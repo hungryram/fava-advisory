@@ -62,6 +62,8 @@ exports.onCreateNode = async ({node, getNode, actions, store, cache, getCache, c
         })  
     }
 
+    
+
     // Generate Legal Nodes
 
     if(node.internal.type === 'File' && node.sourceInstanceName === 'legal' && node.base !== '_index.md'){

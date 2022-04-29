@@ -8,7 +8,12 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 29.7px;
+    color: #3e3e3e;
+}
+
+.font-weight-medium {
+    font-weight: 500;
 }
 
 .uk-button.uk-button-primary {

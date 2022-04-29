@@ -1,6 +1,9 @@
 ---
 title: Parrish Salyers
-order: 3
+order: 2
+contact:
+    email: parrish@nestseekers.com
+    phone: 720.285.6705
 photo: ../../images/Parrish-headshot.jpg
 search_engine_optimization:
     title_tag: Parrish Salyers

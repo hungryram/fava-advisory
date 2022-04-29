@@ -1,6 +1,9 @@
 ---
 title: Christine LaPuma
-order: 2
+order: 4
+contact:
+    email: christinel@nestseekers.com
+    phone: 972.322.8647
 photo: /images/Christine-headshot.jpg
 search_engine_optimization:
     title_tag: Christine LaPuma
