@@ -37,7 +37,8 @@ search_engine_optimization:
   title_tag:
   meta_description:
 ---
-Loft living at its finest. This mint condition home features three bedrooms, three en-suite bathrooms, 6-inch wide white oak flooring, central air conditioning, laundry room, seven large closets, and nearly 1,900 square feet of living space. Soaring eleven foot ceilings and ten floor-to-ceiling casement windows line this western-facing loft, providing optimal afternoon sunlight and city views.
+## Loft living at its finest..
+This mint condition home features three bedrooms, three en-suite bathrooms, 6-inch wide white oak flooring, central air conditioning, laundry room, seven large closets, and nearly 1,900 square feet of living space. Soaring eleven foot ceilings and ten floor-to-ceiling casement windows line this western-facing loft, providing optimal afternoon sunlight and city views.
 
 The open kitchen and living room is ideal for entertaining, and features imported Italian Molteni Dada grey oak and white lacquer cabinetry, honed Carrara marble countertops and back splash, vented hood, under mount stainless steel sink, Bosch and Subzero appliances, and a center island with marble waterfall countertop and a Sharp microwave drawer.
 

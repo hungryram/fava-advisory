@@ -19,7 +19,14 @@ body {
 .uk-button.uk-button-primary {
     background: var(--primary-background-color);
     border: 1px solid var(--primary-button-text);
+    transition: .3s ease;
     color: var(--primary-button-text);
+}
+
+.uk-button.uk-button-primary:hover {
+    background: #000;
+    transition: .3s ease;
+    color: #fff;
 }
 
 @media (min-width: 960px) {

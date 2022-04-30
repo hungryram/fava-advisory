@@ -33,7 +33,7 @@ export default function ListingCard() {
         <>
           <div className="uk-section">
             <div className="uk-container uk-container-large">
-              <div className="uk-child-width-1-3@s uk-grid-large" data-uk-grid>
+              <div className="uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1@s uk-grid-large" data-uk-grid>
                 {data.allListing.nodes.map((node) => {
                   return (
                     <div>

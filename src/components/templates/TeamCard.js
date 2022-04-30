@@ -26,7 +26,7 @@ export default function TeamCard() {
                 <>
                     <div className="uk-section uk-section-large">
                         <div className="uk-container uk-container-large">
-                            <div className="uk-child-width-1-3@s" data-uk-grid>
+                            <div className="uk-child-width-1-3@s uk-text-center" data-uk-grid>
                                 {data.allTeam.nodes.map((node) => {
                                     return (
                                         <div>

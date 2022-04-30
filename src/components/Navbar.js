@@ -6,7 +6,7 @@ import * as Styles from "../styles/navbar.module.css"
 import Logo from "../images/fava-advisory-logo.png"
 import contact from "../../data/profile.json"
 import { IconContext } from "@react-icons/all-files"
-import { CgMenuGridO } from "@react-icons/all-files/cg/CgMenuGridO"
+import { CgMenuGridR } from "@react-icons/all-files/cg/CgMenuGridR"
 import { GrClose } from "@react-icons/all-files/gr/GrClose"
 
 export default function Navbar() {
@@ -43,14 +43,14 @@ export default function Navbar() {
                     <div className="uk-navbar-left">
                         <Link to="/" className="uk-navbar-item uk-logo">
                             {data.branding.logo ?
-                                <img src={data.branding.logo} alt="Fava Advisory" width="80" /> : <h1>Fava Advisory</h1>
+                                <img src={data.branding.logo} alt="Fava Advisory" width="150" /> : <h1>Fava Advisory</h1>
                             }
                         </Link>
                     </div>
                     <div className="uk-navbar-right">
                         <a className="uk-navbar-toggle" data-uk-toggle="target: #offcanvas-flip">
-                            <IconContext.Provider value={{ size: '30px' }}>
-                                <CgMenuGridO />
+                            <IconContext.Provider value={{ size: '30px', color: 'white' }}>
+                                <CgMenuGridR />
                             </IconContext.Provider>
                         </a>
                     </div>
@@ -67,11 +67,11 @@ export default function Navbar() {
                     </IconContext.Provider>
 
 
-                    <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical uk-padding">
+                    <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertica">
                         <li>
                             <Link to="/" className="uk-navbar-item uk-logo">
                                 {data.branding.logo ?
-                                    <img src={data.branding.logo} alt="Iris Tribeca" width={110} data-uk-scrollspy="cls:uk-animation-slide-bottom-small;repeat:true" /> : <h1 className="uk-heading-large accent">Iris</h1>
+                                    <img src={data.branding.logo} alt="Fava Advisory" width={110} data-uk-scrollspy="cls:uk-animation-slide-bottom-small;repeat:true" /> : <h1 className="uk-heading-large accent">Iris</h1>
                                 }
                             </Link>
                         </li>
@@ -80,7 +80,7 @@ export default function Navbar() {
                         {menu.menu.map((node) => {
                             return (
                                 <li>
-                                    <Link to={node.link} className={`uk-h2 ${Styles.menuLink}`}>{node.name}</Link>
+                                    <Link to={node.link} className={`${Styles.menuLink}`}>{node.name}</Link>
                                 </li>
                             )
                         })}

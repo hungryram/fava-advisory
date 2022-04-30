@@ -12,3 +12,14 @@
     z-index: -1;
     background-position: center;
 }
+
+.team-box {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    bottom: -20px;
+    border: 1px solid #cdcdcd;
+    z-index: -1;
+    left: -20px;
+}

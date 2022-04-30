@@ -33,7 +33,8 @@ search_engine_optimization:
   meta_description:
 ---
 
-Lower Fifth Avenue Masterpiece. Completely gut renovated and customized from top to bottom, this exceptional oversized one bedroom has everything you need in a home: In-unit washer/dryer, custom California closets, 7” grey oak plank flooring, brand new electric wiring with custom electric shades, Lutron Grafik T switches, brand new PTAC units complete with ecobee wireless AC control, and last but certainly not least…room for a home office or Peloton\!
+## Lower Fifth Avenue Masterpiece. 
+Completely gut renovated and customized from top to bottom, this exceptional oversized one bedroom has everything you need in a home: In-unit washer/dryer, custom California closets, 7” grey oak plank flooring, brand new electric wiring with custom electric shades, Lutron Grafik T switches, brand new PTAC units complete with ecobee wireless AC control, and last but certainly not least…room for a home office or Peloton\!
 
 Open southern views of both Greenwich Village and blue sky are rare to find, but this home also features dual exposure which provides optimal light to both bed and living rooms. The bedroom boasts another large closet and fits a king size bed comfortably with enough room for a desk or sitting area. The windowed kitchen is outfitted with Dekton countertops and sleek black stainless steel Samsung appliances (including a TV screen fridge) and the bathroom features a pristine standing shower with Kohler fixtures and Toto toilet.
 

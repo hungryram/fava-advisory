@@ -1,29 +1,23 @@
 import * as React from "react"
 import Layout from "../../components/Layout"
 import { graphql } from "gatsby"
-import showdown from "showdown"
 import Pagebanner from "../../components/Pagebanner"
+import TeamDetail from "../../components/templates/TeamDetail"
 
 export default function Teamsingle({ data }) {
   const content = data.team.frontmatter
-  const converter = new showdown.Converter();
     return (
         <Layout>
           <Pagebanner
             title={content.title}
           />
-            <div className="uk-section uk-section-large">
-                <div className="uk-container uk-container-large">
-                    <div className="uk-child-width-1-2@s uk-grid-large" data-uk-grid>
-                        <div>
-                            <img src={content.photo} alt="" />
-                        </div>
-                        <div>
-                            <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(data.team.rawMarkdownBody) }} />
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <TeamDetail 
+            photo={content.photo}
+            email={content.contact.email}
+            phone={content.contact.phone}
+            markdown={data.team.rawMarkdownBody}
+            alt_image={content.title}
+          />
         </Layout>
     )
 }
@@ -35,6 +29,10 @@ query($id: String) {
     frontmatter {
       photo
       title
+      contact {
+        phone
+        email
+      }
       search_engine_optimization {
         title_tag
       }

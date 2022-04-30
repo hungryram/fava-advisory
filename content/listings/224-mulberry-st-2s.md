@@ -36,7 +36,7 @@ search_engine_optimization:
   title_tag:
   meta_description:
 ---
-
+## Located in the exclusive neighborhood of NoLita
 A one-of-a-kind duplex condo nestled in the heart of NoLita, this 3-bedroom, 3-bathroom home is a masterpiece of urban luxury and design. Originally laid out with 4 bedrooms and 3.5 bathrooms, the home has been highly customized and upgraded over time.
 
 Features of this 4,078 sq. ft. apartment include gorgeous white oak flooring, soaring 23-foot ceilings, custom light fixtures and millwork, a wood-burning fireplace, large sash windows, a convenient in-home laundry room with a side-by-side washer/dryer and utility sink, a pair of private parking spaces, a keyed storage room, and a 990 sq. ft. terrace with a pergola and gas grill.
