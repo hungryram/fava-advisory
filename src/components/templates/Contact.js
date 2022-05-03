@@ -6,6 +6,7 @@ import { AiFillYoutube } from "@react-icons/all-files/ai/AiFillYoutube"
 import { IconContext } from "@react-icons/all-files"
 import info from "../../../data/profile.json"
 import { Link } from "gatsby"
+import Social from "../Social"
 
 export default function Contact() {
     return (
@@ -39,35 +40,7 @@ export default function Contact() {
                                 </div>
                                 <div className="uk-margin-xlarge-top">
                                     <span className="uk-light">FOLLOW US</span>
-                                    <ul className={`uk-list uk-margin-medium-top ${Styles.socialIcon}`}>
-                                        {info.social_media.instagram &&
-                                            <li className="uk-display-inline">
-                                                <a href="" className={Styles.socialBorder}>
-                                                    <IconContext.Provider value={{ size: '25px' }}>
-                                                        <AiOutlineInstagram />
-                                                    </IconContext.Provider>
-                                                </a>
-                                            </li>
-                                        }
-                                        {info.social_media.facebook &&
-                                            <li className="uk-display-inline">
-                                                <a href="" className={Styles.socialBorder}>
-                                                    <IconContext.Provider value={{ size: '25px' }}>
-                                                        <FaFacebookF />
-                                                    </IconContext.Provider>
-                                                </a>
-                                            </li>
-                                        }
-                                        {info.social_media.youtube &&
-                                            <li className="uk-display-inline">
-                                                <a href="" className={Styles.socialBorder}>
-                                                    <IconContext.Provider value={{ size: '25px' }}>
-                                                        <AiFillYoutube />
-                                                    </IconContext.Provider>
-                                                </a>
-                                            </li>
-                                        }
-                                    </ul>
+                                    <Social />
                                 </div>
                             </div>
                             <div className="uk-width-expand@s uk-animation-slide-right-small">

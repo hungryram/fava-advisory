@@ -61,7 +61,7 @@ export default function Navbar() {
                 <div className="uk-offcanvas-bar uk-flex uk-flex-column">
 
                     <IconContext.Provider
-                        value={{ size: '40px' }}
+                        value={{ size: '40px', color: 'white' }}
                     >
                         <GrClose className="uk-offcanvas-close" />
                     </IconContext.Provider>
@@ -93,7 +93,7 @@ export default function Navbar() {
                             <a href={`mailto: ${contact.contact_information.email}`} className={Styles.menuContact}>{contact.contact_information.email}</a>
                         </li>
                         <li className={Styles.listContact}>
-                            <a href={`tel: ${contact.contact_information.phone}`} className={Styles.menuContact}>{contact.contact_information.phone}</a>
+                            <a href={`tel: ${contact.contact_information.cell}`} className={Styles.menuContact}>{contact.contact_information.cell}</a>
                         </li>
                         <li className={Styles.listContact}></li>
                         <li>
