@@ -6,15 +6,22 @@ import Pagebanner from "../../components/Pagebanner"
 export default function LegalIndex({ data }) {
     return (
         <Layout>
-            <Pagebanner />
-            <div className="uk-section">
-                <div className="uk-container">
+            <Pagebanner 
+                title="Legal Policies"
+                description="Review legal policies about our website and services. We ask that you read each one carefully and encourage visitors to contact us for any inquiries and/or concerns."
+            />
+            <div className="uk-section uk-section-large">
+                <div className="uk-container uk-container-xsmall">
                     <div className="uk-text-center">
-                        {data.allMarkdownRemark.nodes.map((node) => {
+                        <ul className="uk-list uk-list-divider">
+                        {data.allLegal.nodes.map((node) => {
                             return (
-                                <Link to="">{node.frontmatter.title}</Link>
+                                <li>
+                                    <Link to={"/legal" + node.slug} className="uk-link-reset uk-h4">{node.frontmatter.title}</Link>
+                                </li>
                             )
                         })}
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -24,8 +31,9 @@ export default function LegalIndex({ data }) {
 
 export const pageQuery = graphql`
 {
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/content/legal/"}}) {
+    allLegal {
       nodes {
+        slug
         frontmatter {
           title
         }

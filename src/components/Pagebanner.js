@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default function Pagebanner({ title }) {
+export default function Pagebanner({ title, description }) {
     return (
         <div>
             <div className="uk-section uk-section-xlarge" style={{ background: 'linear-gradient(rgb(17 24 32 / 79%), rgb(17 24 32)), url("https://res.cloudinary.com/hungryram19/image/upload/v1651036967/scott-fava/new-york-city.jpg") no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -14,7 +14,9 @@ export default function Pagebanner({ title }) {
                                     </div>
                                     <div className="uk-animation-slide-right-small">
                                         <div class="uk-light uk-margin-large-left uk-margin-large-top">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur repudiandae, consequuntur fuga vel mollitia nemo ab vitae tempora totam facilis?</p>
+                                            {description &&
+                                                <p>{description}</p>
+                                            }
                                         </div>
                                     </div>
                                 </div>

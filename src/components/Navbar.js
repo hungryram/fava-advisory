@@ -84,6 +84,9 @@ export default function Navbar() {
                                 </li>
                             )
                         })}
+                        <li>
+                            <Link to="/listings/" className={`${Styles.menuLink}`}>Exclusive Listings</Link>
+                        </li>
                     </ul>
                     <ul className="uk-dark uk-padding-remove uk-list" data-uk-scrollspy="cls:uk-animation-slide-bottom-small;repeat:true">
                         <li className={Styles.listContact}>

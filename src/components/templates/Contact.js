@@ -2,8 +2,10 @@ import * as React from "react"
 import * as Styles from "../../styles/contact.module.css"
 import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram"
 import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF"
+import { AiFillYoutube } from "@react-icons/all-files/ai/AiFillYoutube"
 import { IconContext } from "@react-icons/all-files"
 import info from "../../../data/profile.json"
+import { Link } from "gatsby"
 
 export default function Contact() {
     return (
@@ -16,42 +18,55 @@ export default function Contact() {
                     <div className="uk-light">
                         <h1 className="uk-heading-small uk-animation-slide-top-small">Let's get in touch</h1>
                     </div>
-                    <div className="uk-margin-large-top"> 
+                    <div className="uk-margin-large-top">
                         <div data-uk-grid>
                             <div className="uk-width-1-3@s uk-animation-slide-left-small">
                                 <div>
                                     <ul className="uk-list uk-light">
                                         <li>
                                             <span>PHONE</span><br />
-                                            <a href="" className="uk-text-bold uk-text-large">{info.contact_information.cell}</a>
+                                            <a href="" className="font-weight-medium uk-text-large">{info.contact_information.cell}</a>
                                         </li>
                                         <li className="uk-margin-medium-top">
                                             <span>EMAIL</span><br />
-                                            <a href="" className="uk-text-bold uk-text-large">{info.contact_information.email}</a>
+                                            <a href="" className="font-weight-medium uk-text-large">{info.contact_information.email}</a>
                                         </li>
                                         <li className="uk-margin-medium-top">
                                             <span>ADDRESS</span><br />
-                                            <a href="" className="uk-text-bold uk-text-large">{info.contact_information.address}, {info.contact_information.city}, {info.contact_information.state} {info.contact_information.zip_code}</a>
+                                            <a href="" className="font-weight-medium uk-text-large">{info.contact_information.address}, {info.contact_information.city}, {info.contact_information.state} {info.contact_information.zip_code}</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="uk-margin-xlarge-top">
-                                    <span>Follow us</span>
+                                    <span className="uk-light">FOLLOW US</span>
                                     <ul className={`uk-list uk-margin-medium-top ${Styles.socialIcon}`}>
-                                        <li className="uk-display-inline">
-                                            <a href="" className={Styles.socialBorder}>
-                                                <IconContext.Provider value={{ size: '25px' }}>
-                                                    <AiOutlineInstagram />
-                                                </IconContext.Provider>
-                                            </a>
-                                        </li>
-                                        <li className="uk-display-inline">
-                                            <a href="" className={Styles.socialBorder}>
-                                                <IconContext.Provider value={{ size: '25px' }}>
-                                                    <FaFacebookF />
-                                                </IconContext.Provider>
-                                            </a>
-                                        </li>
+                                        {info.social_media.instagram &&
+                                            <li className="uk-display-inline">
+                                                <a href="" className={Styles.socialBorder}>
+                                                    <IconContext.Provider value={{ size: '25px' }}>
+                                                        <AiOutlineInstagram />
+                                                    </IconContext.Provider>
+                                                </a>
+                                            </li>
+                                        }
+                                        {info.social_media.facebook &&
+                                            <li className="uk-display-inline">
+                                                <a href="" className={Styles.socialBorder}>
+                                                    <IconContext.Provider value={{ size: '25px' }}>
+                                                        <FaFacebookF />
+                                                    </IconContext.Provider>
+                                                </a>
+                                            </li>
+                                        }
+                                        {info.social_media.youtube &&
+                                            <li className="uk-display-inline">
+                                                <a href="" className={Styles.socialBorder}>
+                                                    <IconContext.Provider value={{ size: '25px' }}>
+                                                        <AiFillYoutube />
+                                                    </IconContext.Provider>
+                                                </a>
+                                            </li>
+                                        }
                                     </ul>
                                 </div>
                             </div>
@@ -80,6 +95,9 @@ export default function Contact() {
                                         <div className="uk-width-1-1">
                                             <label htmlFor="email">Your Message*</label>
                                             <textarea className="uk-textarea" rows="5" name="Message" id="message"></textarea>
+                                        </div>
+                                        <div className="uk-width-1-1">
+                                            <p className="uk-text-small">By submitting the form with your information above you are agreeing to our <Link to="/legal/terms-and-conditions">Terms and Conditions</Link> and <Link to="/legal/privacy-policy">Privacy Policy</Link></p>
                                         </div>
                                         <div className="uk-width-1-1">
                                             <button className={Styles.submitBtn}>Submit</button>

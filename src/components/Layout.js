@@ -15,6 +15,7 @@ export default function Layout({children}) {
                     :root {
                         --primary-background-color: transparent;
                         --primary-button-text: #000;
+                        --primary-color: #111820;
                     }
                 `}
             </style>

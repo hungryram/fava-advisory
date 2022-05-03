@@ -8,6 +8,7 @@ export default function HomeValue() {
         <Layout>
             <PageBanner
                 title="Home Valuation"
+                description="Get a detailed report with an estimated value of your home. Get informed decisions about selling or refinancing your home by filling out the home valuation form."
             />
             <HomeValueForm />
         </Layout>

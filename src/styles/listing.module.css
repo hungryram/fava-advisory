@@ -2,6 +2,10 @@
     font-size: 17px;
 }
 
+.listing-banner-title {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.8);
+}
+
 .listing-category {
   margin-top: 100px;
 }

@@ -8,6 +8,7 @@ export default function Blog() {
     <Layout>
       <Pagebanner 
         title="Latest News"
+        description="Stay up-to-date with the latest news and trends in the real estate market."
       />
       <BlogList />
     </Layout>

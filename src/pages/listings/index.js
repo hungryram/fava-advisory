@@ -8,6 +8,7 @@ export default function ListingList({ data }) {
     <Layout>
       <Pagebanner 
         title="Exclusive Listings"
+        description="If you're looking for an exclusive listing in New York, you'll want to work with the Fava Advisory Team who has access to the most up-to-date information."
       />
       <ListingCard />
     </Layout>

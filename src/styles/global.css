@@ -84,3 +84,9 @@ body {
 .uk-overlay-primary {
     background: rgba(0,0,0,0.45);
 }
+
+@media screen and (max-width: 800px) {
+    .uk-heading-small {
+        font-size: 2rem;
+    }
+}
