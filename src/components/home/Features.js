@@ -7,8 +7,8 @@ export default function Features() {
             <div className="uk-container uk-container-xlarge" data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 200">
                 <div className="uk-flex uk-flex-center">
                     <div className="uk-width-2xlarge uk-text-center">
-                        <h2>Features</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam cumque odio optio magni omnis dicta non ipsum. Officia, magnam blanditiis.</p>
+                        <h2>Featured</h2>
+                        <p>Browse the available properties in the neighborhoods below.  </p>
                     </div>
                 </div>
                 <div className="uk-section">

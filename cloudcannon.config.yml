@@ -457,6 +457,13 @@ _structures:
     values:
         value: 
           image:
+  review:
+    style: 'modal'
+    type: array
+    values:
+        value: 
+          name:
+          testimonial:
   file_attachments:
     values:
       - label: Attachment
