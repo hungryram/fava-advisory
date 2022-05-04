@@ -21,6 +21,11 @@
         "menu": null
       },
       {
+        "name": "Testimonials",
+        "link": "/testimonials",
+        "menu": null
+      },
+      {
         "name": "Contact",
         "link": "/contact",
         "menu": null
