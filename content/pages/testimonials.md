@@ -73,5 +73,101 @@ testimonials:
                 positive attitude and a sustained commitment to client
                 satisfaction. We would definitely partner with Scott again to
                 buy or sell an apartment in New York City.
+        -
+            name: Pauline & Rob
+            testimonial: >-
+                We were referred to Scott Fava by a long time West Coast friend
+                who had used Scott for several Manhattan transactions. When my
+                husband was offered a wonderful opportunity in New York, we
+                found ourselves with very little time to secure a home before he
+                was to start his new position. To complicate the situation
+                further, we were living outside the USA at the time so
+                logistically we were challenged. Scott was a superstar. Before
+                we even met, he had sent listings so we could narrow our search
+                and also familiarize ourselves with the market. With his
+                guidance, tenacity and expertise (and a lot of legwork\!\!) we
+                find ourselves in our beautiful Soho loft. He negotiated the
+                terms of our lease, guided us through the co-op process and
+                essentially made the entire ordeal as painless as possible.
+        -
+            name: Marshall
+            testimonial: >-
+                I was introduced to Scott through a mutual friend. It was one of
+                the most fortunate introductions of my life. I wanted to move
+                into Manhattan but knew very little about Manhattan real estate.
+                As it turned out, Scott knew just about everything. He listened
+                carefully to what I wanted and then, almost magically, was able
+                to make it happen. He gently guided me through the whole process
+                from beginning to end (neighborhood, building, apartment, co-op
+                board interview, closing) always available, always eager to
+                help. Scott is intelligent and knowledgeable as well as
+                professional and personable. You quickly realize you are working
+                with someone who is truly on your side, who will provide you
+                with all the necessary support and expertise. Now I am happily
+                living in my new home and look back on Scott more as someone who
+                makes dreams come true than as a real estate broker (although
+                he’s as good as it gets at that too)\!
+        -
+            name: 'Mark & Eric '
+            testimonial: >-
+                The Fava Advisory played an important role in our transition
+                from big city to small city. It wasn't easy to say goodbye to
+                our Brooklyn home, but the time was right — as was our real
+                estate team\!
+        -
+            name: Grant & Claire
+            testimonial: >-
+                As first time New Yorkers, the search for a residence can be
+                incredibly daunting. Navigating the process from search to
+                signing felt like an uphill battle...until we met Scott. He
+                helped us think through our priorities, search countless
+                listings, ask the important questions, and make informed offers.
+                At points when the process was overwhelming, he calmly partnered
+                with us to guide us through the options. Ultimately we found a
+                home we absolutely love and have Scott to thank for it. The
+                process doesn't have to be daunting, you just need a trusted
+                partner for the process - and there is no one better than Scott
+                Fava.
+        -
+            name: Rahul
+            testimonial: >-
+                Scott spent a lot of time helping me find the perfect place, and
+                kept finding great spots for me to look at. In a daunting real
+                estate market, he was a rock for this first-time home buyer.
+        -
+            name: Tyler M.
+            testimonial: >-
+                > Parrish is the definition of a consummate professional. With
+                less than 12 hours notice, he arranged an offer for me in my
+                dream building and diligently pursued the listing. Within 24
+                hours, we had an accepted offer. Due to his tenacity,
+                understanding of the market and natural drive, Parrish is the
+                only salesperson I will work with in NYC to list, sell or lease.
+        -
+            name: Sarah M.
+            testimonial: >-
+                Parrish always makes you feel like you’re his number 1 priority.
+                Parrish is the type of real estate agent that is able to remain
+                professional while also making the entire experience fun and
+                stress free\! Throughout the entire process, Parrish kept a
+                clear line of communication and was completely transparent with
+                us about all of the properties he was showing us. Parrish took
+                everything we asked for and was able to find us a home that had
+                everything we wanted and more. He was always one step ahead of
+                us and always had the answers to our questions or he was doing
+                everything he can to get us those answers. Ever since working
+                with Parrish, I’ve recommended him to everyone who is even
+                considering moving in the near future, and I will continue to do
+                so\!
+        -
+            name: Alyssa W.
+            testimonial: >-
+                Parrish is the best broker I’ve ever had the pleasure of doing
+                business with\! He is extremely knowledgeable about Manhattan
+                and the surrounding areas, and truly puts his clients first
+                above all. He is a great communicator and works diligently to
+                make sure each person he works with finds their perfect home for
+                them. If you’re looking for a new place to live, Parrish is the
+                best person to help you make it happen.
 ---
 
