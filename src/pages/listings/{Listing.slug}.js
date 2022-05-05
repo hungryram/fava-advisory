@@ -5,13 +5,19 @@ import ListingBanner from "../../components/templates/ListingBanner"
 import ListingContent from "../../components/templates/ListingContent"
 import * as Styles from "../../styles/listing.module.css"
 import * as ContactStyle from "../../styles/contact.module.css"
+import Seo from "../../components/Seo"
 
 
 export default function ListingSingle({ data }) {
   const frontMatter = data.listing.frontmatter
+  const seo = data.listing.frontmatter.search_engine_optimization
   const content = data.listing
   return (
     <Layout>
+      <Seo
+          title={seo.title_tag}
+          description={seo.meta_description}
+       />
       <ListingBanner
         image={data.listing.frontmatter.photos.main_photo}
         title={frontMatter.title}
@@ -106,6 +112,10 @@ export const query = graphql`
 query($id: String) {
     listing (id: { eq: $id}){
       frontmatter {
+        search_engine_optimization {
+          title_tag
+          meta_description
+        }
         details {
           bathrooms
           bedrooms

@@ -1,8 +1,9 @@
 ---
 title: Testimonials
+description: At Fava Advisory, we pride ourselves on providing top-notch real estate services that are reliable and trustworthy. Our clients love working with us because they know they can trust us to take care of their needs and make the best decisions possible.
 search_engine_optimization:
     title_tag: Testimonials | Fava Advisory
-    meta_description:
+    meta_description: At Fava Advisory, we pride ourselves on providing top-notch real estate services that are reliable and trustworthy.
 testimonials:
     review:
         -

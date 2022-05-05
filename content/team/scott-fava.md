@@ -6,8 +6,8 @@ contact:
     email: scottfava@nestseekers.com
     phone: 917.841.7330
 search_engine_optimization:
-    title_tag: Scott Fava
-    meta_description:
+    title_tag: Scott Fava | Fava Advisory
+    meta_description: Scott has worked on several of the most successful teams in New York City. Scott created the Fava Advisory to marry his experience and industry knowledge intelligent, honest and hardworking advisors dedicated to client service.
 ---
 Scott Fava moved to Manhattan and invested in his first real estate property in 2001. Post-9/11 New York City was a different world, with worried homeowners moving to the suburbs and other cities around the country, Scott bet on the City and hasn’t looked back. Market ups and downs are a reality of the real estate industry, but Scott is a firm believer that New York City is as recession-proof as any major city in the world--typically being the last to get hit and the first to recover. New York is truly the best city in the world and Scott’s love of all that the city has to offer shines through in his sales style.
 

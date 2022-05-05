@@ -29,8 +29,8 @@ details:
   longitude:
   latitude:
 search_engine_optimization:
-  title_tag:
-  meta_description:
+  title_tag: 238 St Marks Ave, 3A | Fava Advisory
+  meta_description: VANTAGE238 is a boutique condominium with a modern interior, elevator and common roof deck. Amazing Prospect Heights location has convenient access to cafes, restaurants, Prospect Park
 ---
 
 Prospect Heights Perfection. This beautiful and bright one bedroom condo with private outdoor space at VANTAGE238 is not to be missed! This spacious home boasts hardwood flooring, central air conditioning controlled with a Nest thermostat, in-unit laundry room, and floor-to-ceiling windows in both the living and bedroom that open up onto your own balcony with open, expansive views. The open kitchen is ideal for entertaining and features Caesarstone countertops, Bosch appliances and expanded cabinetry for maximum storage. The oversized bedroom is tranquil and airy with exceptional closet space. Additional upgrades include a ceiling mounted 1080p High Def Viewsonic projector, discreet in-wall speakers and wiring for HDMI and VGA video, media cabinet, iPhone dock, new washer/dryer, dishwasher, custom window treatments and Murphy bed.

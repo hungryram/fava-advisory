@@ -29,8 +29,8 @@ details:
   longitude:
   latitude:
 search_engine_optimization:
-  title_tag:
-  meta_description:
+  title_tag: '70 VESTRY Street Unit: PHS'
+  meta_description: Developed by Related Companies, 70 Vestry is a white glove luxury condominium with 14 floors designed by the legendary Robert A.M. Stern Architects and completed in 2018.
 ---
 The Crown Jewel of Tribeca, Penthouse South, located atop Robert AM Stern's masterpiece, 70 Vestry, is a magnificent triplex villa on Tribeca's 'Gold Coast' with 360 degree views and breathtaking panoramic Hudson River and city skyline views from thirteen rooms and three floors. This luxurious one-of-a-kind home offers grand proportions, luxury amenities, exquisite finishes, state-of-the-art comforts, unmatched private outdoor space and truly spectacular views in every direction. Extraordinary for large-scale entertaining and private living, this rare trophy home is comprised of an astounding 7,808 interior sqft and 3,687 sqft of private terraces on every level with an interior elevator, as well as two chef's kitchens, 5 bedrooms, 5 full baths and 3 powder rooms. The spectacular, corner formal expanse enjoys 40 feet of unobstructed River views. With River views from most rooms and ceiling heights up to 12'6", this palatial home guarantees stunning sunsets at day's end. The property is a truly rare riverfront penthouse of a caliber that has never, and may never be offered again.
 

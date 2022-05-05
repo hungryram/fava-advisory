@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `new`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Fava Advisory`,
+    siteUrl: `https://www.favaadvisory.com/`
   },
   plugins: [
     "gatsby-plugin-image",
@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": "src/images/icon.png"
+        "icon": "src/images/fava-favicon.png"
       }
     },
     "gatsby-transformer-remark",

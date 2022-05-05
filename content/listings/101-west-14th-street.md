@@ -39,8 +39,8 @@ details:
   longitude:
   latitude:
 search_engine_optimization:
-  title_tag:
-  meta_description:
+  title_tag: 101 West 14th Street, Head of Sales | Fava Advisory
+  meta_description: 101 West 14th Street is an intriguing new development situated at the nexus of Chelsea and Greenwich Village. A collaboration between developer, Gemini Rosemont, and architect, ODA.
 ---
 
 101 West 14th Street is an intriguing new development situated at the nexus of Chelsea and Greenwich Village. A collaboration between developer, Gemini Rosemont, and architect, ODA, the building possesses a bold stacked façade and 44 luxury 1- to 4-bedroom homes with high-end fixtures and finishes. Amenities include a state-of-the-art gym, a private lounge, a lush courtyard, a full-time doorman, private storage, and a stunning rooftop deck with lounge furniture, an outdoor kitchen, and incredible views of the city skyline.

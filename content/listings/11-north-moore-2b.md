@@ -34,8 +34,8 @@ details:
   longitude:
   latitude:
 search_engine_optimization:
-  title_tag:
-  meta_description:
+  title_tag: 11 North Moore, 2B | Fava Advisory
+  meta_description: Prime location is only minutes from some of the finest dining and shopping Tribeca has to offer, including Locanda Verde, Bubby’s, Eataly, Brookfield Place, Westfield Place at the Oculus, and Whole Foods.
 ---
 ## Loft living at its finest..
 This mint condition home features three bedrooms, three en-suite bathrooms, 6-inch wide white oak flooring, central air conditioning, laundry room, seven large closets, and nearly 1,900 square feet of living space. Soaring eleven foot ceilings and ten floor-to-ceiling casement windows line this western-facing loft, providing optimal afternoon sunlight and city views.

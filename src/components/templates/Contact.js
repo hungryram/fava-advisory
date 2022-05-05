@@ -1,14 +1,10 @@
 import * as React from "react"
 import * as Styles from "../../styles/contact.module.css"
-import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram"
-import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF"
-import { AiFillYoutube } from "@react-icons/all-files/ai/AiFillYoutube"
-import { IconContext } from "@react-icons/all-files"
 import info from "../../../data/profile.json"
 import { Link } from "gatsby"
 import Social from "../Social"
 
-export default function Contact() {
+export default function Contact({ props }) {
     return (
         <>
             <div className="uk-section dark-background">

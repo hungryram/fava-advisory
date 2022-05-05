@@ -33,8 +33,8 @@ details:
   longitude:
   latitude:
 search_engine_optimization:
-  title_tag:
-  meta_description:
+  title_tag: 224 Mulberry St, 2S | Fava Advisory
+  meta_description: 224 Mulberry Street is a boutique condominium located in the exclusive neighborhood of NoLita. The building has a 24-hour doorman, a fitness center, and private rooftop terrace with breathtaking views of the city skyline.
 ---
 ## Located in the exclusive neighborhood of NoLita
 A one-of-a-kind duplex condo nestled in the heart of NoLita, this 3-bedroom, 3-bathroom home is a masterpiece of urban luxury and design. Originally laid out with 4 bedrooms and 3.5 bathrooms, the home has been highly customized and upgraded over time.

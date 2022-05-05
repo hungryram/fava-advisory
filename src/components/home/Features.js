@@ -17,7 +17,7 @@ export default function Features() {
                 <div className="uk-section">
                     <div className="uk-child-width-1-3@s" data-uk-grid>
                         <div>
-                            <a href="https://kiransellsny.com/home-search/listings/13035276475" className="uk-link-reset" target="_blank">
+                            <a href="/listings/20-greene-street-unit-6a/" className="uk-link-reset">
                                 <div className="uk-inline-clip uk-transition-toggle image-wrapper uk-cover-container uk-margin-small-bottom">
                                     <canvas height="350" width="500"></canvas>
                                     <img className="uk-transition-scale-up uk-transition-opaque" src={GreenSt} alt="" data-uk-cover />
@@ -35,7 +35,7 @@ export default function Features() {
                             </a>
                         </div>
                         <div>
-                            <a href="https://kiransellsny.com/home-search/listings/13050776560" className="uk-link-reset" target="_blank">
+                            <a href="/listings/70-vestry-street-unit-phs/" className="uk-link-reset">
                                 <div className="uk-inline-clip uk-transition-toggle image-wrapper uk-cover-container uk-margin-small-bottom">
                                     <canvas height="350" width="500"></canvas>
                                     <img className="uk-transition-scale-up uk-transition-opaque" src={Vestry} alt="" data-uk-cover />
@@ -53,7 +53,7 @@ export default function Features() {
                             </a>
                         </div>
                         <div>
-                            <a href="https://kiransellsny.com/home-search/listings/13066039473" className="uk-link-reset" target="_blank">
+                            <a href="/listings/400-w-12th-street-unit-7c/" className="uk-link-reset">
                                 <div className="uk-inline-clip uk-transition-toggle image-wrapper uk-cover-container uk-margin-small-bottom">
                                     <canvas height="350" width="500"></canvas>
                                     <img className="uk-transition-scale-up uk-transition-opaque" src={Tribeca} alt="" data-uk-cover />

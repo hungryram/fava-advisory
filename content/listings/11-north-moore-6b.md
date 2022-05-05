@@ -33,8 +33,8 @@ details:
   longitude:
   latitude:
 search_engine_optimization:
-  title_tag:
-  meta_description:
+  title_tag: 11 North Moore, 6B | Fava Advisory
+  meta_description: 11 North Moore Street is a boutique condominium located in Tribeca. The building has a fully-equipped fitness room, library, private courtyard and bicycle room.
 ---
 Graced with a collection of elegant finishes and a prime Tribeca location, this gut-renovated 3-bedroom, 3-bathroom home is a paradigm of sophisticated design and contemporary urbanity. Features of this 1,897 sq. ft. rental include stunning wide-plank herringbone floors, high ceilings, western exposure, custom floor-to-ceiling windows with motorized shades, an in-unit side-by-side washer/dryer and a customizable smart home system that controls lighting, music, shades and sound.
 

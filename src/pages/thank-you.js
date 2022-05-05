@@ -8,16 +8,16 @@ export default function ThankYou() {
     return (
         <Layout>
             <Seo
-                title="Page Not Found"
-                description="Looks like the page has either been removed or changed."
+                title="Thank you"
+                description="Thank you for submitting the form. We'll get back to you as soon as possible!"
             />
             <Pagebanner
-                title="Page Not Found"
+                title="Thank you"
                 />
             <div className="uk-section uk-section-large">
                 <div className="uk-container uk-text-center">
-                    <h2>404 - Page not found</h2>
-                    <p>Looks like the page may have been moved or deleted. Check back on our other resources</p>
+                    <h2>Thank you</h2>
+                    <p>Our team will get back to you as soon as possible.</p>
                     <Link to="/" className="uk-button uk-button-primary">Back Home</Link>
                 </div>
             </div>

@@ -33,8 +33,8 @@ details:
   longitude:
   latitude:
 search_engine_optimization:
-  title_tag:
-  meta_description:
+  title_tag: 47 Vestry St, 1S | Fava Advisory
+  meta_description: Boasting 19th Century details and a prime Tribeca location, this 2 bedroom + home office, 2 bathroom co-op is a seamless blend of contemporary luxury and old world charm.
 ---
 Boasting 19th Century details and a prime Tribeca location, this 2 bedroom + home office, 2 bathroom co-op is a seamless blend of contemporary luxury and old world charm. Features of this 2,400 square foot home include beautiful hardwood floors, airy 13.5-ft ceilings, impressive closet space, an in-unit washer/dryer, central air controlled by a voice-controlled Nest system, voice-controlled Lutron Caseta lights, exposed brick walls and original timber support beams, a private storage unit and extremely low carrying costs.
 

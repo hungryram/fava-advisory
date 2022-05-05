@@ -2,10 +2,15 @@ import { graphql, Link } from "gatsby"
 import * as React from "react"
 import Layout from "../../components/Layout"
 import Pagebanner from "../../components/Pagebanner"
+import Seo from "../../components/Seo"
 
 export default function LegalIndex({ data }) {
     return (
         <Layout>
+            <Seo
+                title="Legal Policies"
+                description="Review legal policies about our website and services. We ask that you read each one carefully and encourage visitors to contact us for any inquiries and/or concerns."
+            />
             <Pagebanner 
                 title="Legal Policies"
                 description="Review legal policies about our website and services. We ask that you read each one carefully and encourage visitors to contact us for any inquiries and/or concerns."

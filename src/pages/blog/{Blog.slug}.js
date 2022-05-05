@@ -3,12 +3,18 @@ import Layout from "../../components/Layout"
 import { graphql } from "gatsby"
 import showdown from "showdown"
 import Pagebanner from "../../components/Pagebanner"
+import Seo from "../../components/Seo"
 
 export default function BlogSingle({ data }) {
   const content = data.blog.frontmatter
+  const seo = data.blog.frontmatter.search_engine_optimization
   const converter = new showdown.Converter();
   return (
     <Layout>
+      <Seo
+        title={seo.title_tag}
+        description={seo.meta_description}
+      />
       <Pagebanner
         title={content.title}
       />
@@ -38,6 +44,7 @@ query($id: String) {
       title
       search_engine_optimization {
         title_tag
+        meta_description
       }
     }
   }

@@ -29,6 +29,6 @@ details:
   longitude:
   latitude:
 search_engine_optimization:
-  title_tag:
+  title_tag: 230 Riverside Dr, 17A
   meta_description:
 ---

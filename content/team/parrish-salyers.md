@@ -6,8 +6,8 @@ contact:
     phone: 720.285.6705
 photo: ../../images/Parrish-headshot.jpg
 search_engine_optimization:
-    title_tag: Parrish Salyers
-    meta_description:
+    title_tag: Parrish Salyers | Fava Advisory
+    meta_description: Parrish moved to Manhattan to pursue a career in theater but quickly realized that his undeniable work ethic, love of design and passion for client interactions was perfectly suited for his current role as real estate advisor.
 testimonials:
     review:
         -

@@ -4,13 +4,19 @@ import { graphql } from "gatsby"
 import Pagebanner from "../../components/Pagebanner"
 import TeamDetail from "../../components/templates/TeamDetail"
 import showdown from "showdown";
+import Seo from "../../components/Seo"
 
 export default function Teamsingle({ data }) {
   const converter = new showdown.Converter();
-
   const content = data.team.frontmatter
+  const seo = data.team.frontmatter.search_engine_optimization
+
   return (
     <Layout>
+      <Seo
+        title={seo.title_tag}
+        description={seo.meta_description}
+      />
       <Pagebanner
         title={content.title}
       />
@@ -60,17 +66,19 @@ query ($id: String) {
         phone
         email
       }
-      search_engine_optimization {
-        title_tag
-      }
       testimonials {
         review {
           name
           testimonial
         }
       }
+      search_engine_optimization {
+        title_tag
+        meta_description
+      }
     }
   }
 }
+
 
 `

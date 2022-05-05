@@ -29,8 +29,8 @@ details:
   longitude:
   latitude:
 search_engine_optimization:
-  title_tag:
-  meta_description:
+  title_tag: 11 Fifth Ave, 9U | Fava Advisory
+  meta_description: Open southern views of both Greenwich Village and blue sky are rare to find, but this home also features dual exposure which provides optimal light to both bed and living rooms.
 ---
 
 ## Lower Fifth Avenue Masterpiece. 

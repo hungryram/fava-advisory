@@ -28,8 +28,8 @@ details:
   longitude:
   latitude:
 search_engine_optimization:
-  title_tag:
-  meta_description:
+  title_tag: '20 GREENE Street Unit: 6A'
+  meta_description: Stunning & sophisticated condominium loft in SoHo featuring incredible outdoor terrace space with unobstructed 360' views including every landmark in the city from Hudson Yards, to the Freedom Tower, to the Empire State Building.
 ---
 Stunning & sophisticated condominium loft in SoHo featuring incredible outdoor terrace space with unobstructed 360' views including every landmark in the city from Hudson Yards, to the Freedom Tower, to the Empire State Building. Located within the prestigious Cast Iron District, this 3 bedroom, 3.5 bathroom penthouse includes 4,300+ sq ft interior and the dramatic 2,200+ sq ft exterior. Enter into your semi private elevator landing and into the expansive first level with original arched windows and soaring ceilings. This living area is larger than most apartments and is centered on the Crestron controlled gas fireplace and an unbroken gallery-length wall of over 57'. The rich beautiful open kitchen is a chef's dream with an abundance of cabinet, storage and counter space, perfect for prepping for major entertaining or more casual informal gatherings.
 

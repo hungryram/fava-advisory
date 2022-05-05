@@ -2,8 +2,8 @@
 title: Terms and Conditions
 last_update: November 12, 2020
 search_engine_optimization:
-    title_tag: ""
-    meta_description: ""
+    title_tag: "Terms and Conditions | Fava Advisory"
+    meta_description: "The information provided by us on this website is not in any way a recommendation or advice to buy any product or services listed. We recommend seeking professional advice before making any decision."
 ---
 ##### Access to the website
 

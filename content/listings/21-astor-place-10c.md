@@ -34,8 +34,8 @@ details:
   longitude:
   latitude:
 search_engine_optimization:
-  title_tag:
-  meta_description:
+  title_tag: 21 Astor Pl, 10C | Fava Advisory
+  meta_description: 21 Astor Place is a 19th century converted boutique condominium located in NoHo. The building has a 24-hour doorman, private storage, and a fully- equipped gym.
 ---
 A stunning corner condo blending modern functionality and prewar charm, this massive 3-bedroom, 3.5-bathroom NoHo loft is an exemplar of luxury city living. Features of the home include gorgeous hardwood floors, 11-ft beamed ceilings, exposed brick walls, 23 large windows with northern, eastern, and southern exposure, a gas-burning fireplace, multi-zone heating and cooling, and a convenient in-unit laundry room with built-in storage and a washer/dryer.
 

@@ -6,8 +6,8 @@ contact:
     phone: 972.322.8647
 photo: /images/Christine-headshot.jpg
 search_engine_optimization:
-    title_tag: Christine LaPuma
-    meta_description:
+    title_tag: Christine LaPuma | Fava Advisory
+    meta_description: Christine began her real estate career underwriting and inspecting small multi-family investment properties in the Pennsylvania area. Her interest in the industry led her to follow her dream to New York City.
 ---
 Christine began her real estate career underwriting and inspecting small multi-family investment properties in the Pennsylvania area. Her interest in the industry led her to follow her dream to New York City. Christine immersed herself in the market and had immediate success in both sales and rentals. She firmly believes that market knowledge and communication are key to help clients achieve their personal and financial goals. She takes the time to develop thoughtful relationships with her clients in order to help them find and sell their dream homes.
 

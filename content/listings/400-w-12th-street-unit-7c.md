@@ -28,8 +28,8 @@ details:
   longitude:
   latitude:
 search_engine_optimization:
-  title_tag:
-  meta_description:
+  title_tag: '400 W 12TH Street Unit: 7C'
+  meta_description: 'Residence 7C is located in one of Manhattans most highly coveted addresses in the West Village: Superior Ink.'
 ---
 A rare opportunity to own a trophy West Village condo residence with private outdoor space and unobstructed views of the Hudson River. This five bedroom, five-and-a-half-bathroom home offers approximately 4,116 sqft of interior space, over 440 sqft of private outdoor space and was designed with a gracious open floor plan for the modern luxury lifestyle. Arriving home in the large foyer, step into the corner great room with breathtaking views to the West over Hudson River Park and North to Little Island.
 

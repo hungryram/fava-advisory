@@ -30,8 +30,8 @@ details:
   longitude:
   latitude:
 search_engine_optimization:
-  title_tag:
-  meta_description:
+  title_tag: 177 Ninth Ave / Chelsea Enclave
+  meta_description: The Chelsea Enclave is a highly sought-after condo offering residents a 24-hour attended lobby with doorman and concierge services, live-in super, fitness center with yoga studio and premium equipment
 ---
 Features of this quiet and tasteful home include oversized windows offering phenomenal morning light, a spacious and well-conceived layout, beautiful wide-plank oak flooring, central air conditioning, a convenient in-unit washer/dryer, ample closet space and a thoughtful open plan most desirable for downtown living.
 

@@ -2,8 +2,8 @@
 title: Accessibility
 last_update: November 12, 2020
 search_engine_optimization:
-    title_tag: ""
-    meta_description: ""
+    title_tag: "Accessibility | Fava Advisory"
+    meta_description: "The information provided by us on this website is not in any way a recommendation or advice to buy any product or services listed. We recommend seeking professional advice before making any decision."
 ---
 We are committed to providing an accessible website. If you have difficulty accessing content, or having difficulty navigating throughout our website, please contact us immediately.
 
