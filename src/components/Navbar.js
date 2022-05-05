@@ -38,7 +38,7 @@ export default function Navbar() {
                 </div>
             </div>
 
-            <div className="uk-position-top">
+            <div className="uk-position-top" style={{ zIndex: '1' }}>
                 <nav className="uk-navbar uk-container uk-hidden@m uk-box-shadow-small uk-padding-small">
                     <div className="uk-navbar-left">
                         <Link to="/" className="uk-navbar-item uk-logo">

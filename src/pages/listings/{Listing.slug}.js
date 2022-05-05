@@ -37,7 +37,9 @@ export default function ListingSingle({ data }) {
       <div className="uk-section uk-position-relative">
         <div className={Styles.galleryBox}>
           <div className="uk-flex uk-flex-center">
+            <div>
             <h2 className="uk-text-center photo-header">Gallery</h2>
+            </div>
           </div>
         </div>
 
