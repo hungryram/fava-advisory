@@ -21,7 +21,7 @@ export default function Contact() {
                     </div>
                     <div className="uk-margin-large-top">
                         <div data-uk-grid>
-                            <div className="uk-width-1-3@s uk-animation-slide-left-small">
+                            <div className="uk-width-1-3@m uk-animation-slide-left-small">
                                 <div>
                                     <ul className="uk-list uk-light">
                                         <li>
@@ -43,7 +43,7 @@ export default function Contact() {
                                     <Social />
                                 </div>
                             </div>
-                            <div className="uk-width-expand@s uk-animation-slide-right-small">
+                            <div className="uk-width-expand@m uk-animation-slide-right-small">
                                 <div className="uk-card uk-card-default uk-padding">
                                     <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" className={`uk-grid-small ${Styles.contactForm}`} data-uk-grid action="/thank-you">
                                         <input type="hidden" name="form-name" value="contact" />

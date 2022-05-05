@@ -3,7 +3,7 @@ import * as React from "react"
 export default function HomeValueForm() {
     return (
         <>
-            <div className="uk-section">
+            <div className="uk-section uk-light" style={{ backgroundColor: "#111820" }}>
                 <div className="uk-container uk-container-small">
                     <form className="uk-form-horizontal uk-margin-large" name="Home Valuation Request" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="/thank-you">
                         <input name="bot-field" type="hidden" />
@@ -132,7 +132,7 @@ export default function HomeValueForm() {
 
                         <div className="uk-margin">
                             <div className="uk-form-controls">
-                                <button className="uk-button uk-button-primary">Submit</button>
+                                <button className="uk-button uk-button-default">Submit</button>
                                 <div className="md-content">
 
                                 </div>
