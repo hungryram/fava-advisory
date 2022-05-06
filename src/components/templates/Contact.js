@@ -22,11 +22,11 @@ export default function Contact({ props }) {
                                     <ul className="uk-list uk-light">
                                         <li>
                                             <span>PHONE</span><br />
-                                            <a href="" className="font-weight-medium uk-text-large">{info.contact_information.cell}</a>
+                                            <a href={`tel: ${info.contact_information.cell}`} className="font-weight-medium uk-text-large">{info.contact_information.cell}</a>
                                         </li>
                                         <li className="uk-margin-medium-top">
                                             <span>EMAIL</span><br />
-                                            <a href="" className="font-weight-medium uk-text-large">{info.contact_information.email}</a>
+                                            <a href={`mailto:${info.contact_information.email}`} className="font-weight-medium uk-text-large">{info.contact_information.email}</a>
                                         </li>
                                         <li className="uk-margin-medium-top">
                                             <span>ADDRESS</span><br />
