@@ -9,7 +9,7 @@ price: $22,500,000
 properties: Condo
 featured:
 listing_agent:
-draft: false
+draft: true
 photos:
   main_photo: /images/12str.jpg
   gallery:
@@ -38,3 +38,5 @@ The Western facing great room is perfect for everyday living and entertaining al
 On the Eastern end of the home, there is a separate media room equipped with custom built-ins and complimented by a full entertainment bar with a double door wine refrigerator.
 
 Residence 7C is located in one of Manhattan's most highly coveted addresses in the West Village: Superior Ink. This exquisite, 17 story, full-service luxury condominium was a collaboration between Related, Robert A.M. Stern and Yabu Pushelberg consisting of 50 immensely sought-after apartments. Adjacent to Hudson River Park and just minutes from The Highline and Meatpacking, this LEED certified residential building offers incredible amenities including a fitness center with yoga and Pilates studio, children's playroom, entertainment lounge with separate kitchen, screening room, and a valet parking garage with direct elevator access.
+
+**Courtesy of Douglas Elliman**

@@ -10,11 +10,11 @@ export default function ListingList({ data }) {
     <Layout>
       <Seo 
         title="Exclusive Listings by Fava Advisory | Fava Advisory"
-        description="If you're looking for an exclusive listing in New York, you'll want to work with the Fava Advisory Team who has access to the most up-to-date information."
+        description="The Fava Advisory represents a selection of beautiful homes in and around New York City. If you're looking to buy or list your home you'll want to work with the Fava Advisory."
       />
       <Pagebanner 
         title="Exclusive Listings"
-        description="If you're looking for an exclusive listing in New York, you'll want to work with the Fava Advisory Team who has access to the most up-to-date information."
+        description="The Fava Advisory represents a selection of beautiful homes in and around New York City. If you're looking to buy or list your home you'll want to work with the Fava Advisory. Contact us today for a personalized home valuation or to discuss your buying goals. "
       />
       <ListingCard />
     </Layout>

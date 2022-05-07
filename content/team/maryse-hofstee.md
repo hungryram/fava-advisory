@@ -4,7 +4,7 @@ photo: /images/maryse-new.jpg
 contact:
     email: maryse@nestseekers.com
     phone: 646.270.9527
-order: 3
+order: 2
 search_engine_optimization:
     title_tag: Maryse Hofstee | Fava Advisory
     meta_description: Passionate about real estate her whole life, she made the decision to become a real estate broker at the early age of 18 and honed her skills while studying real estate at Hogeschool Rotterdam.

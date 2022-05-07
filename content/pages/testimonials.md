@@ -1,9 +1,9 @@
 ---
 title: Testimonials
-description: At Fava Advisory, we pride ourselves on providing top-notch real estate services that are reliable and trustworthy. Our clients love working with us because they know they can trust us to take care of their needs and make the best decisions possible.
+description: We pride ourselves on providing top-notch real estate services that are reliable, trustworthy and guided by decades of experience. Our clients love working with us because they know they can trust us to take the utmost care of their needs and make the best decisions possible. 
 search_engine_optimization:
     title_tag: Testimonials | Fava Advisory
-    meta_description: At Fava Advisory, we pride ourselves on providing top-notch real estate services that are reliable and trustworthy.
+    meta_description: We pride ourselves on providing top-notch real estate services that are reliable, trustworthy and guided by decades of experience. Our clients love working with us because they know they can trust us to take the utmost care of their needs and make the best decisions possible. 
 testimonials:
     review:
         -
@@ -138,7 +138,7 @@ testimonials:
         -
             name: Tyler M.
             testimonial: >-
-                > Parrish is the definition of a consummate professional. With
+                Parrish is the definition of a consummate professional. With
                 less than 12 hours notice, he arranged an offer for me in my
                 dream building and diligently pursued the listing. Within 24
                 hours, we had an accepted offer. Due to his tenacity,

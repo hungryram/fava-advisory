@@ -9,7 +9,7 @@ price: $16,950,000
 properties: Condo
 featured:
 listing_agent:
-draft: false
+draft: true
 photos:
   main_photo: /images/20-green-st.jpg
   gallery:

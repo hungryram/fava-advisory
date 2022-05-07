@@ -55,19 +55,22 @@ export default function HomeValueForm() {
                             <label className="uk-form-label uk-text-right@m" for="form-horizontal-select">Property Type</label>
                             <div className="uk-form-controls">
                                 <select className="uk-select" id="form-horizontal-select">
-                                    <option selected="selected" value="SFR" data-uw-styling-context="true">
+                                    <option selected="selected" value="Single Family House" data-uw-styling-context="true">
                                         Single Family House
                                     </option>
-                                    <option value="CND" data-uw-styling-context="true">
+                                    <option value="Co-op" data-uw-styling-context="true">
+                                        Co-op
+                                    </option>
+                                    <option value="Condominium" data-uw-styling-context="true">
                                         Condominium
                                     </option>
-                                    <option value="LL" data-uw-styling-context="true">
+                                    <option value="Lots and Land" data-uw-styling-context="true">
                                         Lots / Land
                                     </option>
-                                    <option value="RI" data-uw-styling-context="true">
+                                    <option value="Multi-Unit Residential" data-uw-styling-context="true">
                                         Multi-Unit Residential
                                     </option>
-                                    <option value="COM" data-uw-styling-context="true">
+                                    <option value="Commercial" data-uw-styling-context="true">
                                         Commercial
                                     </option>
                                 </select>

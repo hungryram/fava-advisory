@@ -11,7 +11,7 @@ export default function Features() {
                 <div className="uk-flex uk-flex-center">
                     <div className="uk-width-2xlarge uk-text-center">
                         <h2>Featured Listings</h2>
-                        <p>Browse the available properties in the neighborhoods below.  </p>
+                        <p>Browse the following selection of stunning homes in the neighborhoods below.</p>
                     </div>
                 </div>
                 <div className="uk-section">
@@ -25,7 +25,7 @@ export default function Features() {
                                 </div>
                                 <div className="uk-margin-small-top" data-uk-grid>
                                     <div className="uk-width-1-2">
-                                        <h2 className="uk-margin-remove uk-h5 uk-text-bold accent">20 GREENE Street Unit: 6A</h2>
+                                        <h2 className="uk-margin-remove uk-h5 uk-text-bold accent">20 GREENE Street Unit: 6A - SOHO</h2>
                                         <span>$16,950,000</span>
                                     </div>
                                     <div className="uk-width-1-2 uk-text-right">
@@ -43,7 +43,7 @@ export default function Features() {
                                 </div>
                                 <div className="uk-margin-small-top" data-uk-grid>
                                     <div className="uk-width-1-2">
-                                        <h2 className="uk-margin-remove uk-h5 uk-text-bold accent">70 VESTRY Street Unit: PHS</h2>
+                                        <h2 className="uk-margin-remove uk-h5 uk-text-bold accent">70 VESTRY Street Unit: PHS - Tribeca</h2>
                                         <span>$65,000,000</span>
                                     </div>
                                     <div className="uk-width-1-2 uk-text-right">
@@ -61,7 +61,7 @@ export default function Features() {
                                 </div>
                                 <div className="uk-margin-small-top" data-uk-grid>
                                     <div className="uk-width-1-2">
-                                        <h2 className="uk-margin-remove uk-h5 uk-text-bold accent">400 W 12TH Street Unit: 7C</h2>
+                                        <h2 className="uk-margin-remove uk-h5 uk-text-bold accent">400 W 12TH Street Unit: 7C - West Village</h2>
                                         <span>$22,500,000</span>
                                     </div>
                                     <div className="uk-width-1-2 uk-text-right">

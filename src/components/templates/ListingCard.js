@@ -11,6 +11,7 @@ export default function ListingCard() {
           nodes {
             frontmatter {
               title
+              draft
               price
               photos {
                 main_photo
@@ -36,7 +37,11 @@ export default function ListingCard() {
               <div className="uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1@s uk-grid-large" data-uk-grid>
                 {data.allListing.nodes.map((node) => {
                   return (
-                    <div>
+                    <>
+                      {node.frontmatter.draft ?
+                      <></>
+                      :
+                      <div>
                       <Link to={"/listings" + node.slug} className="uk-link-reset">
                         <div className="uk-inline-clip uk-transition-toggle image-wrapper uk-cover-container uk-margin-small-bottom">
                           <canvas height="350" width="500"></canvas>
@@ -52,11 +57,20 @@ export default function ListingCard() {
                             <span>{node.frontmatter.price}</span>
                           </div>
                           <div className="uk-width-1-2 uk-text-right">
-                            <span>{node.frontmatter.details.bedrooms} Beds / {node.frontmatter.details.bathrooms} Bath</span>
+                            {node.frontmatter.details.bedrooms &&
+
+                              <span>{node.frontmatter.details.bedrooms} Beds / </span>
+                            }
+                            {node.frontmatter.details.bathrooms &&
+                              <span>{node.frontmatter.details.bathrooms} Bath </span>
+                            }
                           </div>
                         </div>
                       </Link>
                     </div>
+                        
+                      }
+                    </>
                   )
                 })}
               </div>

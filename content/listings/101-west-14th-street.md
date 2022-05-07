@@ -1,5 +1,5 @@
 ---
-title: 101 West 14th Street, Head of Sales
+title: 101 West 14th Street
 cities:
 states:
 zip-codes:
