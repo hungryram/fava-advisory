@@ -43,7 +43,7 @@ export default function Navbar() {
                     <div className="uk-navbar-left">
                         <Link to="/" className="uk-navbar-item uk-logo">
                             {data.branding.logo ?
-                                <img src={data.branding.logo} alt="Fava Advisory" width="150" /> : <h1>Fava Advisory</h1>
+                                <img src={data.branding.logo} alt="Fava Advisory" width="120" /> : <h1>Fava Advisory</h1>
                             }
                         </Link>
                     </div>
