@@ -2,7 +2,7 @@
 title: '20 GREENE Street Unit: 6A'
 cities: New York City
 states: NY
-zip-codes: '10013'
+zip_codes: '10013'
 status: Active
 short_title:
 price: $16,950,000

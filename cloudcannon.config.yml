@@ -40,7 +40,7 @@ paths:
 _inputs:
   source:
     label: Source Link
-  zip-codes:
+  zip_codes:
     label: Zip Code
   equal_housing_logo:
     type: switch

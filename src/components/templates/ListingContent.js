@@ -12,6 +12,10 @@ export default function ListingContent(props) {
                         <div className="uk-width-1-3@m">
                             <h2 className="uk-h4 uk-text-bold">Overview</h2>
                             <div className={Styles.listingCategory}>
+                                <div>
+                                    <h3>Address</h3>
+                                    <p className="uk-margin-remove">{props.address}<br /> {props.city} {props.state}, {props.zip_code}</p>
+                                </div>
                                 {props.price &&
                                     <div>
                                         <h3>Price</h3>
@@ -45,6 +49,14 @@ export default function ListingContent(props) {
                                         <div>
                                             <h3>Property Status</h3>
                                             <p className="uk-margin-remove">{props.status}</p>
+                                        </div>
+                                    </>
+                                }
+                                {props.hoa &&
+                                    <>
+                                        <div>
+                                            <h3>HOA</h3>
+                                            <p className="uk-margin-remove">{props.hoa}</p>
                                         </div>
                                     </>
                                 }

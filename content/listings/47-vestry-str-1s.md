@@ -2,7 +2,7 @@
 title: 47 Vestry St, 1S
 cities:
 states:
-zip-codes:
+zip_codes:
 status:
 short_title:
 price: $3,340,000 

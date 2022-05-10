@@ -2,7 +2,7 @@
 title: 21 Astor Pl, 10C
 cities:
 states:
-zip-codes:
+zip_codes:
 status:
 short_title:
 price: Request Price

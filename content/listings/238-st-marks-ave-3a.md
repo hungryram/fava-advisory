@@ -2,7 +2,7 @@
 title: 238 St Marks Ave, 3A
 cities:
 states:
-zip-codes:
+zip_codes:
 status: Asking
 short_title:
 price: $930,000

@@ -2,7 +2,7 @@
 title: 11 Fifth Ave, 9U
 cities:
 states:
-zip-codes:
+zip_codes:
 status:
 short_title:
 price: $1,895,000

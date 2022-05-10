@@ -2,7 +2,7 @@
 title: '70 VESTRY Street Unit: PHS - Tribeca'
 cities: New York City
 states: NY
-zip-codes: '10013'
+zip_codes: '10013'
 status:
 short_title:
 price: $65,000,000

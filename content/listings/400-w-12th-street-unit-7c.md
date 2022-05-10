@@ -2,7 +2,7 @@
 title: '400 W 12TH Street Unit: 7C'
 cities: New York City
 states: NY
-zip-codes: '10014'
+zip_codes: '10014'
 status: Active
 short_title:
 price: $22,500,000

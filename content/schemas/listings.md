@@ -2,7 +2,7 @@
 title:
 cities:
 states:
-zip-codes:
+zip_codes:
 status:
 short_title:
 price:

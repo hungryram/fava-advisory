@@ -2,7 +2,7 @@
 title: 224 Mulberry St, 2S
 cities:
 states:
-zip-codes:
+zip_codes:
 status: Sold
 short_title:
 price: $9,999,999

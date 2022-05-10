@@ -2,7 +2,7 @@
 title: 101 West 14th Street
 cities:
 states:
-zip-codes:
+zip_codes:
 status:
 short_title:
 price: 

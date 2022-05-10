@@ -2,7 +2,7 @@
 title: 230 Riverside Dr, 17A
 cities:
 states:
-zip-codes:
+zip_codes:
 status: Coming Soon
 short_title:
 price: $9,500

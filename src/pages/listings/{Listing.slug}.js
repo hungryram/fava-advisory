@@ -26,6 +26,11 @@ export default function ListingSingle({ data }) {
       <ListingContent
         content={content.rawMarkdownBody}
         title={frontMatter.title}
+        address={frontMatter.title}
+        city={frontMatter.cities}
+        state={frontMatter.states}
+        zip_code={frontMatter.zip_codes}
+        hoa={frontMatter.details.hoa}
         bed={frontMatter.details.bedrooms}
         bath={frontMatter.details.bathrooms}
         price={frontMatter.price}
@@ -75,7 +80,7 @@ export default function ListingSingle({ data }) {
           <form name="Website Listing Inquiry" method="POST" netlify-honeypot="bot-field" data-netlify="true" className={`uk-grid-small ${ContactStyle.contactForm}`} data-uk-grid action="/thank-you">
             <input type="hidden" name="form-name" value="Website Listing Inquiry" />
             <input name="bot-field" type="hidden" />
-            <input type="hidden" name="Subject" value="Website Listing Inquiry" />
+            <input type="hidden" name="Subject" value={`Website Listing Inquiry ${frontMatter.title}`} />
             <div className="uk-width-1-2@s">
               <label htmlFor="fname">First Name*</label>
               <input className="uk-input" type="text" name="First Name" id="fname" required />
@@ -121,6 +126,7 @@ query($id: String) {
         details {
           bathrooms
           bedrooms
+          hoa
         }
         photos {
           gallery {
@@ -132,6 +138,9 @@ query($id: String) {
         properties
         status
         title
+        cities
+        states
+        zip_codes
       }
       rawMarkdownBody
       slug

@@ -6,6 +6,7 @@ import Intro from "../components/home/Intro"
 import Team from "../components/home/Team"
 import Seo from "../components/Seo"
 import HomeSeo from "../../data/seo.json"
+import Instagram from "../components/templates/Instagram"
 
 export default function Home() {
   const schemaMarkup =
@@ -38,6 +39,8 @@ export default function Home() {
       <Team />
 
       <Features />
+
+      <Instagram />
 
     </Layout>
   )

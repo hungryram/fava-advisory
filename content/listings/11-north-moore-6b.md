@@ -2,7 +2,7 @@
 title: 11 North Moore, 6B
 cities:
 states:
-zip-codes:
+zip_codes:
 status:
 short_title:
 price: '$4,500,000 '
