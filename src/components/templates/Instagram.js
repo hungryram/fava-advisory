@@ -1,7 +1,7 @@
 import * as React from "react"
-import Ig1 from "../../images/ig1.jpg"
-import Ig2 from "../../images/ig.jpg"
-import Ig3 from "../../images/ig3.jpg"
+import Ig1 from "../../images/ig-1.jpg"
+import Ig2 from "../../images/ig-2.jpg"
+import Ig3 from "../../images/ig-3.jpg"
 
 export default function Instagram() {
     return (

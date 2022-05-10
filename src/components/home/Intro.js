@@ -16,10 +16,10 @@ export default function Intro() {
                         </div>
                     </div>
                 </div>
-                <div className="uk-margin-medium-top uk-margin-large-right">
+                <div className="uk-margin-medium-top">
                     <div className="uk-flex uk-flex-right">
                         <div className="uk-position-relative" data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 200">
-                            <video src="https://res.cloudinary.com/hungryram19/video/upload/v1649728898/scott-fava/video.mp4" width="1000" height="" muted controls data-uk-video></video>
+                        <iframe width="1000" height="500" src="https://www.youtube.com/embed/YkMWRvjFhsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style={{ maxWidth: '100%' }}></iframe>
                             <div className={Styles.videoFrame}></div>
                             <div className={Styles.videoFrameTwo}></div>
                         </div>
