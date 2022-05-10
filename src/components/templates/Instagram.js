@@ -15,7 +15,7 @@ export default function Instagram() {
                         <a href="https://www.instagram.com/thefavaadvisory/" target="_blank">
                             <div className="uk-cover-container">
                                 <img src={Ig1} alt="" data-uk-cover />
-                                <canvas height="400"></canvas>
+                                <canvas height="500"></canvas>
                             </div>
                         </a>
                     </div>
@@ -23,7 +23,7 @@ export default function Instagram() {
                         <a href="https://www.instagram.com/thefavaadvisory/" target="_blank">
                             <div className="uk-cover-container">
                                 <img src={Ig2} alt="" data-uk-cover />
-                                <canvas height="400"></canvas>
+                                <canvas height="500"></canvas>
                             </div>
                         </a>
                     </div>
@@ -31,7 +31,7 @@ export default function Instagram() {
                         <a href="https://www.instagram.com/thefavaadvisory/" target="_blank">
                             <div className="uk-cover-container">
                                 <img src={Ig3} alt="" data-uk-cover />
-                                <canvas height="400"></canvas>
+                                <canvas height="500"></canvas>
                             </div>
                         </a>
                     </div>
