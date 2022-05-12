@@ -13,6 +13,7 @@ export default function Team() {
                     <div className="uk-width-2xlarge uk-text-center uk-light">
                         <h2>The Advisory Team</h2>
                         <p>The Fava Advisory has closed over half a billion dollars' worth of sales and continue to stand at the forefront of this constantly evolving industry as tech and social media make adaptation a necessity.</p>
+                        <a href="/team/" className="uk-button uk-button-text">View All</a>
                     </div>
                 </div>
             </div>
