@@ -65,6 +65,11 @@ export default function ListingContent(props) {
                         </div>
                         <div className="uk-width-expand@m">
                             <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(props.content) }} />
+                            {props.tour &&
+                                <div className="uk-margin-large">
+                                    <a href={props.tour} className="uk-button uk-button-primary" target="_blank">Virtual Tour</a>
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>

@@ -37,6 +37,7 @@ export default function ListingSingle({ data }) {
         property={frontMatter.properties}
         status={frontMatter.status}
         gallery={frontMatter.photos.gallery.image}
+        tour={frontMatter.tour_link}
       />
 
       <div className="uk-section uk-position-relative">
@@ -134,6 +135,7 @@ query($id: String) {
           }
           main_photo
         }
+        tour_link
         price
         properties
         status

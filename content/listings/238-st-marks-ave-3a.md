@@ -1,8 +1,8 @@
 ---
 title: 238 St Marks Ave, 3A
-cities:
-states:
-zip_codes:
+cities: Brooklyn
+states: NY
+zip_codes: '11238'
 status: Asking
 short_title:
 price: $930,000
@@ -52,6 +52,7 @@ details:
   year_built:
   longitude:
   latitude:
+tour_link: https://my.matterport.com/show/?m=A3L6VdpwBVz
 search_engine_optimization:
   title_tag: 238 St Marks Ave, 3A | Fava Advisory
   meta_description: >-
