@@ -2,8 +2,8 @@
 title: Chris Mohr
 order: 3
 contact:
-  email:
-  phone:
+  email: chrismohr@nestseekers.com
+  phone: 215.622.0756
 photo: /images/chris-mohr.jpg
 search_engine_optimization:
   title_tag: Chris Mohr | Fava Advisory
