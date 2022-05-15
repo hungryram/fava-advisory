@@ -1,8 +1,8 @@
 ---
 title: 177 Ninth Ave / Chelsea Enclave
-cities:
-states:
-zip_codes:
+cities: New York
+states: NY
+zip_codes: '10011'
 status: Off Market
 short_title:
 price: Request Price

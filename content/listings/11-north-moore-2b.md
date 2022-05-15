@@ -1,8 +1,8 @@
 ---
 title: 11 North Moore, 2B
-cities:
-states:
-zip_codes:
+cities: New York
+states: NY
+zip_codes: '10013'
 status:
 short_title:
 price: Request Price

@@ -1,8 +1,8 @@
 ---
 title: 21 Astor Pl, 10C
-cities:
-states:
-zip_codes:
+cities: New York
+states: NY
+zip_codes: '10003'
 status:
 short_title:
 price: Request Price

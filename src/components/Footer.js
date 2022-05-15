@@ -41,10 +41,10 @@ export default function Footer() {
                                     <form name="Newsletter" method="POST" netlify-honeypot="bot-field" data-netlify="true" className={`uk-grid-small ${Styles.contactForm}`} data-uk-grid action="/thank-you">
                                         <input type="hidden" name="form-name" value="Newsletter" />
                                         <input name="bot-field" type="hidden" />
-                                        <input type="hidden" name="Subject" value="Newsletter" />
+                                        <input type="hidden" name="Subject" value="New Newsletter Opt-in" />
                                         <div className="uk-text-center">
                                             <div uk-form-custom="target: true">
-                                                <input className="uk-input" type="text" placeholder="Email Address" />
+                                                <input className="uk-input" type="text" name="Email" placeholder="Email Address" />
                                             </div>
                                             <button className="uk-button uk-button-default">Submit</button>
                                         </div>

@@ -1,8 +1,8 @@
 ---
 title: 224 Mulberry St, 2S
-cities:
-states:
-zip_codes:
+cities: New York
+states: NY
+zip_codes: '10012'
 status: Sold
 short_title:
 price: $9,999,999

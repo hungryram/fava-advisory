@@ -1,8 +1,8 @@
 ---
 title: 11 Fifth Ave, 9U
-cities:
-states:
-zip_codes:
+cities: New York
+states: NY
+zip_codes: '10003'
 status:
 short_title:
 price: $1,895,000

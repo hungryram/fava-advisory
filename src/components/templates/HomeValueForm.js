@@ -7,6 +7,8 @@ export default function HomeValueForm() {
                 <div className="uk-container uk-container-small">
                     <form className="uk-form-horizontal uk-margin-large" name="Home Valuation Request" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="/thank-you">
                         <input name="bot-field" type="hidden" />
+                        <input type="hidden" name="form-name" value="Home Valuation Request" />
+
                         <input type="hidden" name="Subject" value="Website Home Valuation Request" />
 
                         <div className="uk-margin">

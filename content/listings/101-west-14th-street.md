@@ -1,8 +1,8 @@
 ---
 title: 101 West 14th Street
-cities:
-states:
-zip_codes:
+cities: New York
+states: NY
+zip_codes: '10011'
 status:
 short_title:
 price: 

@@ -24,7 +24,7 @@ export default function Navbar() {
                                     {menu.menu.map((node) => {
                                         return (
                                             <li>
-                                                <Link to={node.link}>{node.name}</Link>
+                                                <Link to={node.link} className="uk-button uk-button-text">{node.name}</Link>
                                             </li>
                                         )
                                     })}
