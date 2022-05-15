@@ -1,8 +1,8 @@
 ---
 title: 230 Riverside Dr, 17A
-cities:
-states:
-zip_codes:
+cities: New York
+states: NY
+zip_codes: '10025'
 status: Coming Soon
 short_title:
 price: $9,500
@@ -36,3 +36,6 @@ search_engine_optimization:
   meta_description:
 ---
 
+Panoramic and sweeping views of Riverside Park and the Hudson River abound from the huge, wrap-around roof deck of this mint condition 2 bedroom, 2 bath pre-war condominium. Renovated to perfection, this home boasts a beautiful open kitchen, beamed ceilings, hardwood floors, three exposures with brand new windows, generous closet space, central air conditioning and a climate-controlled walk-in wine cellar. The gracious living room and both bedrooms have magnificent open views and light. Additionally, there are two luxurious marble bathrooms with high end fixtures, as well as a laundry closet outfitted with a Bosch washer and dryer.
+
+Conveniently located across the street from Riverside Park and a mere two blocks from the express 1-2-3 subway station, this full time-doorman building offers fabulous amenities including a fully equipped fitness center, playroom and bike storage.
