@@ -14,6 +14,14 @@ module.exports = {
         "icon": "src/images/fava-favicon.png"
       }
     },
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: [
+          "G-TY236HPCG6", // Google Analytics / GA
+        ],
+      }
+    },
     "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
