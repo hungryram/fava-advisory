@@ -20,7 +20,10 @@ module.exports = {
         trackingIds: [
           "G-TY236HPCG6", // Google Analytics / GA
         ],
-      }
+        pluginConfig: {
+          head: true
+        }
+      },
     },
     "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
