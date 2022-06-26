@@ -29,6 +29,7 @@ collection_groups:
     collections:
       - pages
       - listings
+      - buildings
       - team
       - legal
   - heading: Blog
