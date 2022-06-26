@@ -1,13 +1,12 @@
 ---
 title: 242 Broome St
-building_activity:
-    unit:
-     - unit:
-       price:
-       beds:
-       baths:
-       square_footage:
-       status:
+unit:
+    - unit:
+    price:
+    beds:
+    baths:
+    square_footage:
+    status:
 ---
 
 Situated in the exciting enclave of Essex Crossing, 242 Broome is arguably the bellwether of the
