@@ -43,6 +43,25 @@ exports.onCreateNode = async ({node, getNode, actions, store, cache, getCache, c
         })  
     }
 
+        // Generate Listing Nodes
+
+        if(node.internal.type === 'File' && node.sourceInstanceName === 'buildings' && node.base !== '_index.md'){
+            const markdownNode = await getNode(node.children[0])
+            const slug = createFilePath({ node, getNode, basePath: `pages` })
+            createNode({
+                ...markdownNode,
+                id: `${node.id}-building`,
+                slug: slug,
+                parent: node.id,
+                children: [`${markdownNode.id}`],
+                internal: {
+                    type: 'Building',
+                    content: JSON.stringify(markdownNode),
+                    contentDigest: createContentDigest(markdownNode)
+                },
+            })  
+        }
+
     // Generate Blog Post Nodes
 
     if(node.internal.type === 'File' && node.sourceInstanceName === 'blog' && node.base !== '_index.md'){
