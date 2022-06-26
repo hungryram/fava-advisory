@@ -21,6 +21,10 @@ collections_config:
     add_options:
       - name: Add Listings
         href: "cloudcannon:explore/content/listings/.md🆕/content/schemas/listings.md"
+  buildings:
+    path: "content/buildings"
+    output: true
+    url: "content/buildings/[slug]"
 collection_groups:
   - heading: Profile and Settings
     collections:
