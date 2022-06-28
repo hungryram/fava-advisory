@@ -2,11 +2,11 @@ import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import * as React from "react"
 
-export default function ListingCard({ link, photo, title, price, bedrooms, bathrooms }) {
+export default function ListingCard({ link, photo, title, price, bedrooms, bathrooms, _key }) {
   return (
     <>
       <div>
-        <Link to={link} className="uk-link-reset">
+        <Link to={link} className="uk-link-reset" key={_key}>
           <div className="uk-inline-clip uk-transition-toggle image-wrapper uk-cover-container uk-margin-small-bottom">
             <GatsbyImage
               image={photo.childImageSharp.gatsbyImageData}

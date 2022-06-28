@@ -1,12 +1,12 @@
-import { graphql, Link, StaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import * as React from "react"
 import * as Styles from "../../styles/team.module.css"
 
-export default function TeamCard({ photo, link, title }) {
+export default function TeamCard({ photo, link, title, _key }) {
     return (
         <div>
-            <Link to={link}>
+            <Link to={link} key={_key}>
                 <div className={`uk-inline-clip  ${Styles.teamCard}`}>
                     <div className="uk-cover-container">
                         <div className="uk-transition-toggle image-wrapper" style={{ height: '500px' }}>

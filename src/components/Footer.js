@@ -1,13 +1,8 @@
 import * as React from "react"
 import Logo from "../images/fava-advisory-logo.png"
 import * as Styles from "../styles/footer.module.css"
-import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram"
-import { IconContext } from "@react-icons/all-files"
-import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF"
-import { AiFillYoutube } from "@react-icons/all-files/ai/AiFillYoutube"
 import { graphql, Link, StaticQuery } from "gatsby"
 import info from "../../data/profile.json"
-import * as SocialStyles from "../styles/contact.module.css"
 import Social from "./Social"
 
 

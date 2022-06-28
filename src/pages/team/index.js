@@ -26,6 +26,7 @@ export default function TeamIndex({ data }) {
                   link={"/team" + node.slug}
                   photo={node.childMarkdownRemark.frontmatter.photo}
                   title={node.childMarkdownRemark.frontmatter.title}
+                  _key={node.id}
                 />
               )
             })}
@@ -56,6 +57,7 @@ export const query = graphql`
           order
         }
       }
+      id
     }
   }
 }

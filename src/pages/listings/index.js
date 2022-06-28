@@ -32,6 +32,7 @@ export default function ListingList({ data }) {
                         bathrooms={node.childMarkdownRemark.frontmatter.details.bathrooms}
                         price={node.childMarkdownRemark.frontmatter.price}
                         link={"/listings" + node.slug}
+                        _key={node.id}
                     />
 
                   }
@@ -80,8 +81,10 @@ export const query = graphql`
           }
         }
       }
+      id
     }
   }
 }
+
 
 `
