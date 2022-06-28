@@ -1,6 +1,6 @@
 ---
 title: Maryse Hofstee
-photo: /images/maryse-new.jpg
+photo: ../../images/maryse-new.jpg
 contact:
     email: maryse@nestseekers.com
     phone: 646.270.9527

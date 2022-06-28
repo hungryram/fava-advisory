@@ -4,7 +4,7 @@ order: 3
 contact:
     email: christinel@nestseekers.com
     phone: 972.322.8647
-photo: /images/Christine-headshot.jpg
+photo: ../../images/Christine-headshot.jpg
 search_engine_optimization:
     title_tag: Christine LaPuma | Fava Advisory
     meta_description: Christine began her real estate career underwriting and inspecting small multi-family investment properties in the Pennsylvania area. Her interest in the industry led her to follow her dream to New York City.

@@ -8,15 +8,80 @@ import Seo from "../../components/Seo"
 export default function ListingList({ data }) {
   return (
     <Layout>
-      <Seo 
+      <Seo
         title="Exclusive Listings by Fava Advisory | Fava Advisory"
         description="The Fava Advisory represents a selection of beautiful homes in and around New York City. If you're looking to buy or list your home you'll want to work with the Fava Advisory."
       />
-      <Pagebanner 
+      <Pagebanner
         title="Exclusive Listings"
         description="The Fava Advisory represents a selection of beautiful homes in and around New York City. If you're looking to buy or list your home you'll want to work with the Fava Advisory. Contact us today for a personalized home valuation or to discuss your buying goals. "
       />
-      <ListingCard />
+      <div className="uk-section">
+        <div className="uk-container uk-container-large">
+          <div className="uk-child-width-1-3@s" data-uk-grid>
+            {data.allListing.nodes.map((node) => {
+              return (
+                <>
+                  {node.childMarkdownRemark.frontmatter.draft ?
+                    <></>
+                    :
+                    <ListingCard
+                        title={node.childMarkdownRemark.frontmatter.title}
+                        photo={node.childMarkdownRemark.frontmatter.photos.main_photo}
+                        bedrooms={node.childMarkdownRemark.frontmatter.details.bedrooms}
+                        bathrooms={node.childMarkdownRemark.frontmatter.details.bathrooms}
+                        price={node.childMarkdownRemark.frontmatter.price}
+                        link={"/listings" + node.slug}
+                    />
+
+                  }
+                </>
+              )
+            })}
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }
+
+export const query = graphql`
+{
+  allListing(
+    filter: {frontmatter: {}}
+    sort: {fields: frontmatter___title, order: DESC}
+  ) {
+    nodes {
+      slug
+      childMarkdownRemark {
+        frontmatter {
+          photos {
+            main_photo {
+              childImageSharp {
+                gatsbyImageData(quality: 100)
+              }
+            }
+            gallery {
+              image {
+                childImageSharp {
+                  gatsbyImageData(quality: 100)
+                }
+              }
+            }
+          }
+          draft
+          price
+          title
+          properties
+          status
+          details {
+            bathrooms
+            bedrooms
+          }
+        }
+      }
+    }
+  }
+}
+
+`

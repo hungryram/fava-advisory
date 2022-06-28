@@ -1,8 +1,9 @@
 import * as React from "react"
 import showdown from "showdown"
+import { GatsbyImage } from "gatsby-plugin-image"
 import * as Styles from "../../styles/team.module.css"
 
-export default function Teamsingle(props) {
+export default function Teamsingle({ title, phone, email, photo, markdown }) {
     const converter = new showdown.Converter();
     return (
         <>
@@ -11,20 +12,23 @@ export default function Teamsingle(props) {
                     <div className="uk-grid-large" data-uk-grid>
                         <div className="uk-width-1-3@s">
                             <div className="uk-position-relative">
-                                <img src={props.photo} alt={props.alt_image} />
+                                <GatsbyImage
+                                    image={photo.childImageSharp.gatsbyImageData}
+                                    alt={title}
+                                />
                                 <div className={Styles.teamBox}></div>
                             </div>
                             <div className="team-contact uk-margin-large-top">
                                 <h3>GET IN TOUCH</h3>
-                                <span><strong>Phone:</strong> <a href={`tel: ${props.phone}`} className="uk-link-reset">{props.phone}</a></span><br />
-                                <span><strong>Email:</strong> <a href={`mailto: ${props.email}`} className="uk-link-reset">{props.email}</a></span>
+                                <span><strong>Phone:</strong> <a href={`tel: ${phone}`} className="uk-link-reset">{phone}</a></span><br />
+                                <span><strong>Email:</strong> <a href={`mailto: ${email}`} className="uk-link-reset">{email}</a></span>
                             </div>
                         </div>
                         <div className="uk-width-expand@s">
-                            <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(props.markdown) }} />
+                            <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(markdown) }} />
                             <div className="uk-margin-large">
                                 <div>
-                                    <a href={`tel: ${props.phone}`} className="uk-button uk-button-primary">Contact</a>
+                                    <a href={`tel: ${phone}`} className="uk-button uk-button-primary">Contact</a>
                                 </div>
                             </div>
                         </div>

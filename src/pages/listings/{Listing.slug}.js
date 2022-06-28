@@ -1,5 +1,6 @@
 import { graphql, Link } from "gatsby"
 import * as React from "react"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../../components/Layout"
 import ListingBanner from "../../components/templates/ListingBanner"
 import ListingContent from "../../components/templates/ListingContent"
@@ -9,8 +10,8 @@ import Seo from "../../components/Seo"
 
 
 export default function ListingSingle({ data }) {
-  const frontMatter = data.listing.frontmatter
-  const seo = data.listing.frontmatter.search_engine_optimization
+  const frontMatter = data.listing.childMarkdownRemark.frontmatter
+  const seo = data.listing.childMarkdownRemark.frontmatter.search_engine_optimization
   const content = data.listing
   return (
     <Layout>
@@ -19,7 +20,7 @@ export default function ListingSingle({ data }) {
           description={seo.meta_description}
        />
       <ListingBanner
-        image={data.listing.frontmatter.photos.main_photo}
+        image={frontMatter.photos.main_photo}
         title={frontMatter.title}
       />
 
@@ -51,16 +52,20 @@ export default function ListingSingle({ data }) {
 
         <div className="uk-container uk-container-large uk-position-relative">
 
-          <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slider="center: true">
+          <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" data-uk-slider="center: true">
 
-            <ul class="uk-slider-items uk-grid uk-grid-match" data-uk-height-viewport="offset-top: true; offset-bottom: 30" data-uk-lightbox>
+            <ul class="uk-slider-items uk-grid uk-grid-match" data-uk-lightbox>
               {frontMatter.photos.gallery.map((node) => {
                 return (
                   <>
                     <li class="uk-width-3-4">
-                      <div class="uk-cover-container">
-                        <a href={node.image}>
-                          <img src={node.image} alt="" data-uk-cover />
+                      <div class="uk-cover-container" style={{ height: '600px' }}>
+                        <a href={node.image.publicURL}>
+                          <GatsbyImage
+                            image={node.image.childImageSharp.gatsbyImageData}
+                            style={{ objectFit: 'cover', height: '600px', width: '100%', objectPosition: 'center' }}
+                            data-uk-cover
+                          />
                         </a>
                       </div>
                     </li>
@@ -68,8 +73,8 @@ export default function ListingSingle({ data }) {
                 )
               })}
             </ul>
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-next uk-slider-item="next"></a>
+            <a class="uk-position-center-left uk-position-small" href="#" data-uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href="#" data-uk-slidenav-next uk-slider-item="next"></a>
           </div>
         </div>
       </div>
@@ -117,8 +122,9 @@ export default function ListingSingle({ data }) {
 }
 
 export const query = graphql`
-query($id: String) {
-    listing (id: { eq: $id}){
+query ($id: String) {
+  listing(id: {eq: $id}) {
+    childMarkdownRemark {
       frontmatter {
         search_engine_optimization {
           title_tag
@@ -131,9 +137,18 @@ query($id: String) {
         }
         photos {
           gallery {
-            image
+            image {
+              childImageSharp {
+                gatsbyImageData(quality: 100, placeholder: BLURRED)
+              }
+              publicURL
+            }
           }
-          main_photo
+          main_photo {
+            childImageSharp {
+              gatsbyImageData(quality: 100, placeholder: BLURRED)
+            }
+          }
         }
         tour_link
         price
@@ -144,9 +159,11 @@ query($id: String) {
         states
         zip_codes
       }
-      rawMarkdownBody
-      slug
     }
+    rawMarkdownBody
+    slug
   }
-  
+}
+
+
 `

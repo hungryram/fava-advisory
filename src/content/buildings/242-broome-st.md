@@ -1,7 +1,7 @@
 ---
 title: 242 Broome St
 photos:
-  main_photo: ../../images/scott-fava.jpg
+  main_photo: ../../images/IMG_5438_HIGH RES.jpg
 unit:
   - unit: '#11A - 242 Broome Street'
     price: $3,150,000

@@ -8,8 +8,8 @@ import Seo from "../../components/Seo"
 
 export default function Teamsingle({ data }) {
   const converter = new showdown.Converter();
-  const content = data.team.frontmatter
-  const seo = data.team.frontmatter.search_engine_optimization
+  const content = data.team.childMarkdownRemark.frontmatter
+  const seo = data.team.childMarkdownRemark.frontmatter.search_engine_optimization
 
   return (
     <Layout>
@@ -59,26 +59,31 @@ export const pageQuery = graphql`
 query ($id: String) {
   team(id: {eq: $id}) {
     rawMarkdownBody
-    frontmatter {
-      photo
-      title
-      contact {
-        phone
-        email
-      }
-      testimonials {
-        review {
-          name
-          testimonial
+    childMarkdownRemark {
+      frontmatter {
+        photo {
+          childImageSharp {
+            gatsbyImageData
+          }
         }
-      }
-      search_engine_optimization {
-        title_tag
-        meta_description
+        testimonials {
+          review {
+            name
+            testimonial
+          }
+        }
+        search_engine_optimization {
+          title_tag
+          meta_description
+        }
+        title
+        contact {
+          email
+          phone
+        }
       }
     }
   }
 }
-
 
 `

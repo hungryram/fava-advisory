@@ -4,7 +4,7 @@ order: 3
 contact:
   email: chrismohr@nestseekers.com
   phone: 215.622.0756
-photo: /images/chris-mohr.jpg
+photo: ../../images/chris-mohr.jpg
 search_engine_optimization:
   title_tag: Chris Mohr | Fava Advisory
   meta_description: ' Chris brings a strategic approach to real estate sales and works tirelessly to ensure the best possible outcome for his clients.'

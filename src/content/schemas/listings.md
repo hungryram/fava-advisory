@@ -1,0 +1,31 @@
+---
+title:
+cities:
+states:
+zip_codes:
+status:
+short_title:
+price:
+properties:
+featured:
+listing_agent:
+draft: false
+photos:
+    main_photo:
+    gallery: []
+details:
+    bathrooms:
+    bedrooms:
+    garage:
+    hoa:
+    lot_size:
+    mls_number:
+    square_footage:
+    year_built:
+    longitude:
+    latitude:
+tour_link:
+search_engine_optimization:
+    title_tag:
+    meta_description:
+---

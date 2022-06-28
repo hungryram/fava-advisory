@@ -48,42 +48,42 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "legal",
-        "path": `${__dirname}/content/legal`
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        "name": "team",
-        "path": `${__dirname}/content/team`
+        "path": `${__dirname}/src/content/legal`
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "blog",
-        "path": `${__dirname}/content/blog`
+        "path": `${__dirname}/src/content/blog`
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "listings",
-        "path": `${__dirname}/content/listings`
+        "path": `${__dirname}/src/content/listings`
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "content",
-        "path": `${__dirname}/content/pages`
+        "path": `${__dirname}/src/content/pages`
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "buildings",
-        "path": `${__dirname}/content/buildings`
+        "path": `${__dirname}/src/content/buildings`
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "team",
+        "path": `${__dirname}/src/content/team`
       },
     },
   ]

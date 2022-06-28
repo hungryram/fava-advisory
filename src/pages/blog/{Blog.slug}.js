@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import showdown from "showdown"
 import Pagebanner from "../../components/Pagebanner"
 import Seo from "../../components/Seo"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 export default function BlogSingle({ data }) {
   const content = data.blog.frontmatter
@@ -23,6 +24,9 @@ export default function BlogSingle({ data }) {
           <div>
             <div>
               <img src={content.featured_image} alt="" />
+              <GatsbyImage
+                image={content.featured_image.childImageSharp.gatsbyImageData}
+              />
               <div className="uk-margin-large-top">
                 <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(data.blog.rawMarkdownBody) }} />
               </div>
@@ -36,11 +40,15 @@ export default function BlogSingle({ data }) {
 }
 
 export const pageQuery = graphql`
-query($id: String) {
-  blog(id: { eq: $id}){
+query ($id: String) {
+  blog(id: {eq: $id}) {
     rawMarkdownBody
     frontmatter {
-      featured_image
+      featured_image {
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, quality: 100)
+        }
+      }
       title
       search_engine_optimization {
         title_tag

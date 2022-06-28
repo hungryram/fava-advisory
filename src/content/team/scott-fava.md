@@ -1,7 +1,7 @@
 ---
 title: Scott Fava
 order: 1
-photo: /images/scott-fava.jpg
+photo: ../../images/scott-fava.jpg
 contact:
     email: scottfava@nestseekers.com
     phone: 917.841.7330

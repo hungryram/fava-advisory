@@ -1,4 +1,5 @@
 import { graphql, Link, StaticQuery } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 import * as React from "react"
 
 
@@ -11,13 +12,18 @@ export default function BlogList() {
                   nodes {
                     frontmatter {
                       title
-                      featured_image
+                      featured_image {
+                        childImageSharp {
+                          gatsbyImageData
+                        }
+                      }
                       image_alt_tag
                     }
                     slug
                   }
                 }
               }
+              
             `}
             render={data => (
                 <>
@@ -29,9 +35,13 @@ export default function BlogList() {
                                         <div>
                                             <Link to={"/blog" + node.slug} className="uk-link-reset">
                                                 <div className="uk-card">
-                                                    <div className="uk-card-media-top uk-cover-container">
-                                                        <canvas height="500"></canvas>
-                                                        <img src={node.frontmatter.featured_image} alt={node.frontmatter.image_alt_tag} data-uk-cover />
+                                                    <div className="uk-card-media-top uk-cover-container" style={{ height: '300px' }}>
+                                                        <GatsbyImage
+                                                            image={node.frontmatter.featured_image.childImageSharp.gatsbyImageData}
+                                                            alt={node.frontmatter.image_alt_tag}
+                                                            style={{ objectFit: 'cover', height: '100%', width: '100%' }}
+                                                            data-uk-cover
+                                                        />
                                                         <div className="uk-overlay-agent uk-position-cover"></div>
 
                                                     </div>
