@@ -12,7 +12,7 @@ search_engine_optimization:
   title_tag: ""
 tags:
 - Tips
-title: 5 Tools Everyone In The Real Estate Industry Should Be Using
+title: test
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et sem sed sollicitudin. Donec non odio neque. Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec.&nbsp;**Quisque bibendum orci ac nibh facilisis**, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur
 
