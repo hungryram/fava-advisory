@@ -139,14 +139,14 @@ query ($id: String) {
           gallery {
             image {
               childImageSharp {
-                gatsbyImageData(quality: 100, placeholder: BLURRED)
+                gatsbyImageData(quality: 80, placeholder: BLURRED)
               }
               publicURL
             }
           }
           main_photo {
             childImageSharp {
-              gatsbyImageData(quality: 100, placeholder: BLURRED)
+              gatsbyImageData(quality: 80, placeholder: BLURRED)
             }
           }
         }
