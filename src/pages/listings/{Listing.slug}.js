@@ -64,7 +64,6 @@ export default function ListingSingle({ data }) {
                           <GatsbyImage
                             image={node.image.childImageSharp.gatsbyImageData}
                             style={{ objectFit: 'cover', height: '600px', width: '100%', objectPosition: 'center' }}
-                            data-uk-cover
                           />
                         </a>
                       </div>

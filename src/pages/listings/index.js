@@ -59,14 +59,7 @@ export const query = graphql`
           photos {
             main_photo {
               childImageSharp {
-                gatsbyImageData(quality: 80)
-              }
-            }
-            gallery {
-              image {
-                childImageSharp {
-                  gatsbyImageData(quality: 80)
-                }
+                gatsbyImageData(quality: 30, width: 500)
               }
             }
           }
@@ -85,6 +78,5 @@ export const query = graphql`
     }
   }
 }
-
 
 `

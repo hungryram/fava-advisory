@@ -13,7 +13,6 @@ export default function ListingCard({ link, photo, title, price, bedrooms, bathr
               alt={title}
               className="uk-transition-scale-up uk-transition-opaque"
               style={{ objectFit: 'cover', height: '100%', width: '100%' }}
-              data-uk-cover
             />
           </div>
           <div className="uk-margin-small-top" data-uk-grid>
