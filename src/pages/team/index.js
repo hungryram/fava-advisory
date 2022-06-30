@@ -50,7 +50,7 @@ export const query = graphql`
           }
           photo {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(quality: 80, placeholder: BLURRED, formats: AUTO)
             }
           }
           title

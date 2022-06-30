@@ -59,7 +59,7 @@ export const query = graphql`
           photos {
             main_photo {
               childImageSharp {
-                gatsbyImageData(quality: 30, width: 500)
+                gatsbyImageData(quality: 30, width: 500, formats: AUTO)
               }
             }
           }

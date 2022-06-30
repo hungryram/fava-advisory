@@ -63,7 +63,7 @@ query ($id: String) {
       frontmatter {
         photo {
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData(quality: 80, placeholder: BLURRED, formats: AUTO)
           }
         }
         testimonials {
