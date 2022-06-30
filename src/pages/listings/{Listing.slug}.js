@@ -138,14 +138,14 @@ query ($id: String) {
           gallery {
             image {
               childImageSharp {
-                gatsbyImageData(quality: 80, placeholder: BLURRED)
+                gatsbyImageData(quality: 80, placeholder: BLURRED, formats: AUTO)
               }
               publicURL
             }
           }
           main_photo {
             childImageSharp {
-              gatsbyImageData(quality: 80, placeholder: BLURRED)
+              gatsbyImageData(quality: 80, placeholder: BLURRED, formats: AUTO)
             }
           }
         }
@@ -163,6 +163,5 @@ query ($id: String) {
     slug
   }
 }
-
 
 `
