@@ -11,9 +11,8 @@ featured:
 listing_agent:
 draft: false
 photos:
-  main_photo: ../../images/11 North Moore Street Apt 6B__2.jpg
+  main_photo: ../../images/11 North Moore Street Apt 6B__3.jpg
   gallery:
-    - image: ../../images/11 North Moore Street Apt 6B__2.jpg
     - image: ../../images/11 North Moore Street Apt 6B__3.jpg
     - image: ../../images/11 North Moore Street Apt 6B__4.jpg
     - image: ../../images/11 North Moore Street Apt 6B__5.jpg

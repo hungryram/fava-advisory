@@ -19,18 +19,18 @@ export default function ListingList({ data }) {
       <div className="uk-section">
         <div className="uk-container uk-container-large">
           <div className="uk-child-width-1-3@s" data-uk-grid>
-            {data.allListing.nodes.map((node) => {
+          {data.allListing.nodes.map((node) => {
               return (
                 <>
-                  {node.childMarkdownRemark.frontmatter.draft ?
+                  {node.frontmatter.draft ?
                     <></>
                     :
                     <ListingCard
-                        title={node.childMarkdownRemark.frontmatter.title}
-                        photo={node.childMarkdownRemark.frontmatter.photos.main_photo}
-                        bedrooms={node.childMarkdownRemark.frontmatter.details.bedrooms}
-                        bathrooms={node.childMarkdownRemark.frontmatter.details.bathrooms}
-                        price={node.childMarkdownRemark.frontmatter.price}
+                        title={node.frontmatter.title}
+                        photo={node.frontmatter.photos.main_photo}
+                        bedrooms={node.frontmatter.details.bedrooms}
+                        bathrooms={node.frontmatter.details.bathrooms}
+                        price={node.frontmatter.price}
                         link={"/listings" + node.slug}
                         _key={node.id}
                     />
@@ -53,30 +53,29 @@ export const query = graphql`
     sort: {fields: frontmatter___title, order: DESC}
   ) {
     nodes {
-      slug
-      childMarkdownRemark {
-        frontmatter {
-          photos {
-            main_photo {
-              childImageSharp {
-                gatsbyImageData(quality: 30, width: 500, formats: AUTO)
-              }
+      frontmatter {
+        title
+        draft
+        price
+        photos {
+          main_photo {
+            childImageSharp {
+              gatsbyImageData(quality: 20, formats: AUTO)
             }
           }
-          draft
-          price
-          title
-          properties
-          status
-          details {
-            bathrooms
-            bedrooms
-          }
         }
+        properties
+        status
+        details {
+          bathrooms
+          bedrooms
+        }
+        draft
       }
-      id
+      slug
     }
   }
 }
+
 
 `
