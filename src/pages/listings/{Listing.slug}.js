@@ -60,7 +60,7 @@ export default function ListingSingle({ data }) {
                   <>
                     <li class="uk-width-3-4">
                       <div class="uk-cover-container" style={{ height: '600px' }}>
-                        <a href="">
+                        <a href={node.image.publicURL}>
                           <GatsbyImage
                             image={node.image.childImageSharp.gatsbyImageData}
                             style={{ objectFit: 'cover', height: '600px', width: '100%', objectPosition: 'center' }}
