@@ -138,9 +138,6 @@ query ($id: String) {
           gallery {
             image {
               childImageSharp {
-                fluid {
-                  src
-                }
                 gatsbyImageData(quality: 80, placeholder: BLURRED, formats: AUTO)
               }
               publicURL
