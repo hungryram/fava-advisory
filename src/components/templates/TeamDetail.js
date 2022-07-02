@@ -24,7 +24,7 @@ export default function Teamsingle(props) {
                             <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(props.markdown) }} />
                             <div className="uk-margin-large">
                                 <div>
-                                    <a href={`tel: ${props.phone}`} className="uk-button uk-button-primary">Contact</a>
+                                    <a href={`tel: ${props.phone}`} className="uk-button uk-button-primary">Contact</a> 
                                 </div>
                             </div>
                         </div>
