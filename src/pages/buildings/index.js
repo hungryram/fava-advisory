@@ -1,5 +1,5 @@
 import * as React from "react"
-import PageBanner from "../../components/PageBanner"
+import PageBanner from "../../components/Pagebanner"
 import Layout from "../../components/Layout"
 import { graphql } from "gatsby"
 import BuildingCard from "../../components/templates/BuildingCard"
