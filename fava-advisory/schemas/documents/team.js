@@ -19,6 +19,11 @@ export default {
             }
         },
         {
+            title: 'Order',
+            name: 'order',
+            type: 'number'
+        },
+        {
             title: 'Image',
             name: 'image',
             type: 'image'
@@ -33,6 +38,17 @@ export default {
             name: 'content',
             type: 'blockContent'
         },
+        {
+            title: 'Reviews',
+            name: 'teamReviews',
+            type: 'reviews'
+        },
+        {
+            title: 'Search Engine Optimization',
+            name: 'seo',
+            type: 'seo'
+        }
+
 
     ]
 }

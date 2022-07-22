@@ -1,6 +1,7 @@
 import * as React from "react"
 import showdown from "showdown"
 import * as Styles from "../../styles/listing.module.css"
+import { PortableText } from "@portabletext/react"
 
 export default function ListingContent(props) {
     const converter = new showdown.Converter();
@@ -63,8 +64,10 @@ export default function ListingContent(props) {
                             </div>
 
                         </div>
-                        <div className="uk-width-expand@m">
-                            <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(props.content) }} />
+                        <div className="uk-width-expand@m md-content">
+                            <PortableText
+                                value={props.content}
+                            />
                             {props.tour &&
                                 <div className="uk-margin-large">
                                     <a href={props.tour} className="uk-button uk-button-primary" target="_blank">Virtual Tour</a>

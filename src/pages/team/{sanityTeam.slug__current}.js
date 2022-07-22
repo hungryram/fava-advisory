@@ -8,8 +8,8 @@ import Seo from "../../components/Seo"
 
 export default function Teamsingle({ data }) {
   const converter = new showdown.Converter();
-  const content = data.team.frontmatter
-  const seo = data.team.frontmatter.search_engine_optimization
+  const content = data.sanityTeam
+  const seo = data.sanityTeam.seo
 
   return (
     <Layout>
@@ -21,13 +21,13 @@ export default function Teamsingle({ data }) {
         title={content.title}
       />
       <TeamDetail
-        photo={content.photo}
-        email={content.contact.email}
-        phone={content.contact.phone}
-        markdown={data.team.rawMarkdownBody}
+        photo={content.image.asset.gatsbyImageData}
+        email={content.contact_information.email}
+        phone={content.contact_information.phone_number}
         alt_image={content.title}
+        content={content._rawContent}
       />
-      {content.testimonials &&
+      {content.teamReviews &&
             <div className="uk-section" style={{ paddingTop: '0px' }}>
             <div className="uk-container">
               <div className="uk-flex uk-flex-center">
@@ -36,11 +36,11 @@ export default function Teamsingle({ data }) {
                 </div>
               </div>
               <div className="uk-child-width-1-1@s uk-dark" data-uk-grid>
-                {content.testimonials.review.map((node) => {
+                {content.teamReviews.review.map((node) => {
                   return (
                     <>
                       <div>
-                        <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(node.testimonial) }} />
+                        <p>{node.testimonial}</p>
                         <small><em>&mdash; {node.name}</em></small>
                         <hr />
                       </div>
@@ -57,25 +57,27 @@ export default function Teamsingle({ data }) {
 
 export const pageQuery = graphql`
 query ($id: String) {
-  team(id: {eq: $id}) {
-    rawMarkdownBody
-    frontmatter {
-      photo
-      title
-      contact {
-        phone
-        email
+  sanityTeam(id: {eq: $id}) {
+    _rawContent
+    contact_information {
+      email
+      phone_number
+    }
+    image {
+      asset {
+        gatsbyImageData(placeholder: BLURRED)
       }
-      testimonials {
-        review {
-          name
-          testimonial
-        }
+    }
+    title
+    teamReviews {
+      review {
+        name
+        testimonial
       }
-      search_engine_optimization {
-        title_tag
-        meta_description
-      }
+    }
+    seo {
+      meta_description
+      title_tag
     }
   }
 }

@@ -6,12 +6,12 @@ import ListingContent from "../../components/templates/ListingContent"
 import * as Styles from "../../styles/listing.module.css"
 import * as ContactStyle from "../../styles/contact.module.css"
 import Seo from "../../components/Seo"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 
 export default function ListingSingle({ data }) {
-  const frontMatter = data.listing.frontmatter
-  const seo = data.listing.frontmatter.search_engine_optimization
-  const content = data.listing
+  const frontMatter = data.sanityListings
+  const seo = data.sanityListings.seo
   return (
     <Layout>
       <Seo
@@ -19,25 +19,22 @@ export default function ListingSingle({ data }) {
           description={seo.meta_description}
        />
       <ListingBanner
-        image={data.listing.frontmatter.photos.main_photo}
         title={frontMatter.title}
+        cover={frontMatter.cover.asset.gatsbyImageData}
       />
 
       <ListingContent
-        content={content.rawMarkdownBody}
         title={frontMatter.title}
-        address={frontMatter.title}
-        city={frontMatter.cities}
-        state={frontMatter.states}
-        zip_code={frontMatter.zip_codes}
+        address={frontMatter.Address.address}
+        city={frontMatter.Address.city}
+        state={frontMatter.Address.state}
+        zip_code={frontMatter.Address.zip_code}
         hoa={frontMatter.details.hoa}
+        price={frontMatter.details.price}
         bed={frontMatter.details.bedrooms}
         bath={frontMatter.details.bathrooms}
-        price={frontMatter.price}
-        property={frontMatter.properties}
-        status={frontMatter.status}
-        gallery={frontMatter.photos.gallery.image}
-        tour={frontMatter.tour_link}
+        property={frontMatter.property_type}
+        content={frontMatter._rawContent}
       />
 
       <div className="uk-section uk-position-relative">
@@ -53,14 +50,18 @@ export default function ListingSingle({ data }) {
 
           <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slider="center: true">
 
-            <ul class="uk-slider-items uk-grid uk-grid-match" data-uk-height-viewport="offset-top: true; offset-bottom: 30" data-uk-lightbox>
-              {frontMatter.photos.gallery.map((node) => {
+            <ul class="uk-slider-items uk-grid uk-grid-match" data-uk-lightbox>
+              {frontMatter.imagesGallery.map((node) => {
                 return (
                   <>
                     <li class="uk-width-3-4">
                       <div class="uk-cover-container">
-                        <a href={node.image}>
-                          <img src={node.image} alt="" data-uk-cover />
+                        <a href={node.asset.url}>
+                          <GatsbyImage
+                            image={node.asset.gatsbyImageData}
+                            alt={node.title}
+                            aspectRatio={1}
+                          />
                         </a>
                       </div>
                     </li>
@@ -117,36 +118,41 @@ export default function ListingSingle({ data }) {
 }
 
 export const query = graphql`
-query($id: String) {
-    listing (id: { eq: $id}){
-      frontmatter {
-        search_engine_optimization {
-          title_tag
-          meta_description
-        }
-        details {
-          bathrooms
-          bedrooms
-          hoa
-        }
-        photos {
-          gallery {
-            image
-          }
-          main_photo
-        }
-        tour_link
-        price
-        properties
-        status
-        title
-        cities
-        states
-        zip_codes
+query ($id: String) {
+  sanityListings(id: {eq: $id}) {
+    details {
+      year_built
+      square_footage
+      mls_number
+      property_type
+      bedrooms
+      bathrooms
+      price
+    }
+    Address {
+      zip_code
+      city
+      state
+      address
+    }
+    seo {
+      meta_description
+      title_tag
+    }
+    title
+    imagesGallery {
+      asset {
+        gatsbyImageData(placeholder: BLURRED, aspectRatio: 1)
+        url
       }
-      rawMarkdownBody
-      slug
+    }
+    _rawContent
+    cover {
+      asset {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
     }
   }
-  
+}
+
 `

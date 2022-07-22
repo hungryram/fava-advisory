@@ -6,41 +6,43 @@ export default function TeamCard() {
     return (
         <StaticQuery
             query={graphql`
-        {
-            allTeam(sort: {fields: frontmatter___order, order: ASC}) {
-              nodes {
-                slug
-                frontmatter {
-                  search_engine_optimization {
-                    title_tag
+            {
+                allSanityTeam(sort: {fields: order, order: ASC}) {
+                  nodes {
+                    title
+                    slug {
+                      current
+                    }
+                    image {
+                      asset {
+                        url
+                      }
+                    }
                   }
-                  title
-                  photo
-                  order
                 }
               }
-            }
-          }
+              
+              
         `}
             render={data => (
                 <>
                     <div className="uk-section uk-section-large">
                         <div className="uk-container uk-container-large">
                             <div className="uk-child-width-1-3@s uk-text-center" data-uk-grid>
-                                {data.allTeam.nodes.map((node) => {
+                                {data.allSanityTeam.nodes.map((node) => {
                                     return (
                                         <div>
-                                            <Link to={"/team" + node.slug}>
+                                            <Link to={"/team/" + node.slug.current}>
                                                 <div className={`uk-inline-clip  ${Styles.teamCard}`}>
                                                     <div className="uk-cover-container">
                                                         <canvas height="500" width="400"></canvas>
                                                         <div className="uk-transition-toggle image-wrapper">
-                                                            <img className={`uk-transition-scale-up uk-transition-opaque ${Styles.image}`} src={node.frontmatter.photo} alt="" data-uk-cover/>
+                                                            <img className={`uk-transition-scale-up uk-transition-opaque ${Styles.image}`} src={node.image.asset.url} alt="" data-uk-cover/>
                                                         </div>
 
                                                     </div>
                                                     <div className="uk-overlay uk-position-bottom uk-light uk-text-center">
-                                                        <h3 className="uk-h4">{node.frontmatter.title}</h3>
+                                                        <h3 className="uk-h4">{node.title}</h3>
                                                     </div>
                                                 </div>
                                             </Link>

@@ -33,6 +33,12 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width:800px) {
+  .gallery-box {
+    height: 50%;
+  }
+}
+
 .gallery-box div h2 {
   background: white;
   margin-top: -20px;

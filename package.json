@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@portabletext/react": "^1.0.6",
     "@react-icons/all-files": "^4.1.0",
     "gatsby": "^4.11.1",
     "gatsby-plugin-google-gtag": "^4.14.0",

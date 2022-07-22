@@ -61,7 +61,7 @@ export default function Navbar() {
                 <div className="uk-offcanvas-bar uk-flex uk-flex-column">
 
                     <IconContext.Provider
-                        value={{ size: '40px', color: 'white' }}
+                        value={{ size: '40px', color: '#fff' }}
                     >
                         <GrClose className="uk-offcanvas-close" />
                     </IconContext.Provider>

@@ -15,6 +15,13 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: "eltiq8rw",
+        dataset: "production",
+      },
+    },
+    {
       resolve: "gatsby-plugin-google-gtag",
       options: {
         trackingIds: [

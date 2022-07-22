@@ -13,7 +13,7 @@ export default function Social() {
             <ul className={`uk-list uk-margin-medium-top ${Styles.socialIcon}`}>
                 {info.social_media.instagram &&
                     <li className="uk-display-inline">
-                        <a href={info.social_media.instagram} className={Styles.socialBorder} target="_blank" rel="noopener noreferrer">
+                        <a href={info.social_media.instagram} className={Styles.socialBorder} target="_blank" rel="noopener noreferrer" title="Visit Instgram Profile" aria-hidden="true">
                             <IconContext.Provider value={{ size: '25px' }}>
                                 <AiOutlineInstagram />
                             </IconContext.Provider>
@@ -22,7 +22,7 @@ export default function Social() {
                 }
                 {info.social_media.facebook &&
                     <li className="uk-display-inline">
-                        <a href={info.social_media.facebook} className={Styles.socialBorder} target="_blank" rel="noopener noreferrer">
+                        <a href={info.social_media.facebook} className={Styles.socialBorder} target="_blank" rel="noopener noreferrer" title="Visit Facebook Profile" aria-hidden="true">
                             <IconContext.Provider value={{ size: '25px' }}>
                                 <FaFacebookF />
                             </IconContext.Provider>
@@ -31,7 +31,7 @@ export default function Social() {
                 }
                 {info.social_media.youtube &&
                     <li className="uk-display-inline">
-                        <a href={info.social_media.youtube} className={Styles.socialBorder} target="_blank" rel="noopener noreferrer">
+                        <a href={info.social_media.youtube} className={Styles.socialBorder} target="_blank" rel="noopener noreferrer" title="Visit Youtube Channel" aria-hidden="true">
                             <IconContext.Provider value={{ size: '25px' }}>
                                 <AiFillYoutube />
                             </IconContext.Provider>

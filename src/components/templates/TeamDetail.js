@@ -1,6 +1,8 @@
 import * as React from "react"
 import showdown from "showdown"
 import * as Styles from "../../styles/team.module.css"
+import { PortableText } from "@portabletext/react"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function Teamsingle(props) {
     const converter = new showdown.Converter();
@@ -11,7 +13,10 @@ export default function Teamsingle(props) {
                     <div className="uk-grid-large" data-uk-grid>
                         <div className="uk-width-1-3@s">
                             <div className="uk-position-relative">
-                                <img src={props.photo} alt={props.alt_image} />
+                                <GatsbyImage
+                                    image={props.photo}
+                                    alt={props.alt_image}
+                                />
                                 <div className={Styles.teamBox}></div>
                             </div>
                             <div className="team-contact uk-margin-large-top">
@@ -21,7 +26,9 @@ export default function Teamsingle(props) {
                             </div>
                         </div>
                         <div className="uk-width-expand@s">
-                            <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(props.markdown) }} />
+                            <PortableText
+                                value={props.content}
+                            />
                             <div className="uk-margin-large">
                                 <div>
                                     <a href={`tel: ${props.phone}`} className="uk-button uk-button-primary">Contact</a> 
