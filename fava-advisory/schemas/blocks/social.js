@@ -17,6 +17,6 @@ export default {
             title: 'Facebook',
             name: 'facebook',
             type: 'string',
-        },
+        }
     ]
 }

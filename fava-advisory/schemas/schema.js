@@ -8,12 +8,14 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import blockContent from './blockContent'
 import contact from './blocks/contact'
 import reviews from './blocks/reviews'
-import social from './blocks/social'
+import unit from './blocks/unit'
+import innerUnit from './blocks/innerUnit'
 import seo from './blocks/seo'
 import address from './blocks/address'
 import listingDetails from './blocks/listingDetails'
 import innerReview from './blocks/innerReview'
 import team from "./documents/team"
+import buildings from "./documents/buildings"
 import listings from "./documents/listings"
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -27,6 +29,7 @@ export default createSchema({
     // in the studio.
     team,
     listings,
+    buildings,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
@@ -36,6 +39,7 @@ export default createSchema({
     seo,
     address,
     listingDetails,
-    social
+    unit,
+    innerUnit
   ]),
 })

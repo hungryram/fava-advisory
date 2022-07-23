@@ -23,24 +23,19 @@ export default function BuildingsIndex({ data }) {
 
 export const query = graphql`
 {
-    allBuilding {
-      nodes {
-        frontmatter {
-          photos {
-            main_photo
-          }
-          title
-          unit {
-            baths
-            beds
-            price
-            square_footage
-            status
-            unit
-          }
+  allSanityBuildings {
+    nodes {
+      cover {
+        asset {
+          gatsbyImageData
         }
-        slug
+      }
+      title
+      slug {
+        current
       }
     }
   }
+}
+
 `

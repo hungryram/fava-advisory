@@ -17,6 +17,11 @@ export default {
             title: 'Address',
             name: 'address',
             type: 'address'
+        },
+        {
+            title: 'Social',
+            name: 'social',
+            type: 'social'
         }
     ]
 }
