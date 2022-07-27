@@ -3,12 +3,11 @@ import * as React from "react"
 import Layout from "../../components/Layout"
 import ListingBanner from "../../components/templates/ListingBanner"
 import { PortableText } from "@portabletext/react"
-import { Line } from 'react-chartjs-2';
-import { Chart as ChartJS } from "chart.js/auto"
-
+import Seo from "../../components/Seo"
 
 export default function Building({ data }) {
     const frontMatter = data.sanityBuildings
+    const seo = data.sanityBuildings.seo
 
     return (
         <Layout>
@@ -16,6 +15,10 @@ export default function Building({ data }) {
                 cover={frontMatter.cover.asset.gatsbyImageData}
                 title={frontMatter.title}
             />
+      <Seo
+          title={seo.title_tag}
+          description={seo.meta_description}
+       />
             <div className="uk-light" style={{ backgroundColor: '#111820' }}>
                 <div className="uk-section-large">
                     <div className="uk-container">
@@ -32,9 +35,11 @@ export default function Building({ data }) {
                                         value={frontMatter._rawContent}
                                     />
                                 }
-                                <div className="uk-white">
-                                    <a href="" className="uk-button-default uk-button">View Market Report</a>
-                                </div>
+                                {frontMatter.marketReportFile &&
+                                    <div className="uk-white">
+                                        <a href={frontMatter.marketReportFile.asset.url} target="_blank" className="uk-button-default uk-button">View Market Report</a>
+                                    </div>
+                                }
                                 <div className="uk-margin-large-top">
                                     <div className="uk-child-width-1-3@s" data-uk-grid>
                                         {frontMatter.number_of_units
@@ -154,6 +159,11 @@ query ($id: String) {
           graphName
           _rawDescription
           graphCode
+        }
+      }
+      marketReportFile {
+        asset {
+          url
         }
       }
     }
