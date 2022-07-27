@@ -22,12 +22,19 @@ export default function Building({ data }) {
 
                         <div data-uk-grid>
                             <div className="uk-width-expand@s">
-                                <h2>{frontMatter.heading}</h2>
+                                {frontMatter.heading &&
+                                    <h2>{frontMatter.heading}</h2>
+                                }
                             </div>
                             <div className="uk-width-3-5@s">
-                                <PortableText
-                                    value={frontMatter._rawContent}
-                                />
+                                {frontMatter._rawContent &&
+                                    <PortableText
+                                        value={frontMatter._rawContent}
+                                    />
+                                }
+                                <div className="uk-white">
+                                    <a href="" className="uk-button-default uk-button">View Market Report</a>
+                                </div>
                                 <div className="uk-margin-large-top">
                                     <div className="uk-child-width-1-3@s" data-uk-grid>
                                         {frontMatter.number_of_units
@@ -58,44 +65,46 @@ export default function Building({ data }) {
                         </div>
                     </div>
                 </div>
-                <div className="uk-section">
-                    <div className="uk-container">
-                        <div class="uk-overflow-auto">
-                            <table class="uk-table uk-table-small uk-table-divider uk-table-justify uk-table-middle uk-text-small">
-                                <thead>
-                                    <tr>
-                                        <th>Unit</th>
-                                        <th>Beds</th>
-                                        <th>Baths</th>
-                                        <th>Price</th>
-                                        <th>Square Footage</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {frontMatter.units.units.map((node) => {
-                                        return (
-                                            <tr>
-                                                {node.unit ? <td>{node.unit}</td> : <td>-</td>}
-                                                {node.beds ? <td>{node.beds}</td> : <td>-</td>}
-                                                {node.baths ? <td>{node.baths}</td> : <td>-</td>}
-                                                {node.price ? <td>{node.price}</td> : <td>-</td>}
-                                                {node.square_footage ? <td>{node.square_footage}</td> : <td>-</td>}
-                                                {node.status ? <td>{node.status}</td> : <td>-</td>}
+                {frontMatter.units &&
+                    <div className="uk-section">
+                        <div className="uk-container">
+                            <div class="uk-overflow-auto">
+                                <table class="uk-table uk-table-small uk-table-divider uk-table-justify uk-table-middle uk-text-small">
+                                    <thead>
+                                        <tr>
+                                            <th>Unit</th>
+                                            <th>Beds</th>
+                                            <th>Baths</th>
+                                            <th>Price</th>
+                                            <th>Square Footage</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {frontMatter?.units?.units.map((node) => {
+                                            return (
+                                                <tr>
+                                                    {node.unit ? <td>{node.unit}</td> : <td>-</td>}
+                                                    {node.beds ? <td>{node.beds}</td> : <td>-</td>}
+                                                    {node.baths ? <td>{node.baths}</td> : <td>-</td>}
+                                                    {node.price ? <td>{node.price}</td> : <td>-</td>}
+                                                    {node.square_footage ? <td>{node.square_footage}</td> : <td>-</td>}
+                                                    {node.status ? <td>{node.status}</td> : <td>-</td>}
 
 
-                                            </tr>
-                                        )
-                                    })}
-                                </tbody>
-                            </table>
+                                                </tr>
+                                            )
+                                        })}
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                </div>
+                }
                 <div className="uk-section">
                     <div className="uk-container uk-container-xlarge">
                         <div className="uk-child-width-1-2@s uk-flex-center uk-text-center graphEmbed" data-uk-grid data-uk-height-match>
-                            {frontMatter.graphs.graphs.map((node) => {
+                            {frontMatter.graphs?.graphs.map((node) => {
                                 return (
                                     <div>
                                         <div dangerouslySetInnerHTML={{ __html: node.graphCode }} />

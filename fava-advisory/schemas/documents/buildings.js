@@ -18,10 +18,9 @@ export default {
             }
         },
         {
-            title: 'Hide',
-            name: 'hide',
-            type: 'boolean',
-            description: 'Hide the listing from the listings page'
+            title: 'Market Report File',
+            name: 'marketReportFile',
+            type: 'file'
         },
         {
             title: 'Number of Units',
