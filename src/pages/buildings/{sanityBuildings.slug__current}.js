@@ -94,11 +94,18 @@ export default function Building({ data }) {
                 </div>
                 <div className="uk-section">
                     <div className="uk-container uk-container-xlarge">
-                        <div className="uk-child-width-1-2@s" data-uk-grid>
-                            <div className="uk-white">
-                                
-                            <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQgJC09CgmnZ61IJdqswDlN17TcjGXpWcXbiC6nNlEz9WCGngfwuU3zORzB13GIOdavSqNXLjyVO3P1/pubchart?oid=1116779755&amp;format=interactive"></iframe>
-                            </div>
+                        <div className="uk-child-width-1-2@s uk-flex-center uk-text-center graphEmbed" data-uk-grid data-uk-height-match>
+                            {frontMatter.graphs.graphs.map((node) => {
+                                return (
+                                    <div>
+                                        <div dangerouslySetInnerHTML={{ __html: node.graphCode }} />
+                                        <h2>{node.graphName}</h2>
+                                        <PortableText
+                                            value={node._rawDescription}
+                                        />
+                                    </div>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>
@@ -137,10 +144,7 @@ query ($id: String) {
         graphs {
           graphName
           _rawDescription
-          axes {
-            xAxis
-            yAxis
-          }
+          graphCode
         }
       }
     }

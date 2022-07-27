@@ -14,24 +14,10 @@ export default {
             type: 'blockContent'
         },
         {
-            title: 'Type of Graph',
-            name: 'graphType',
-            type: 'string',
-            options: {
-                list: [
-                    {title: 'Line', value: 'line'},
-                    {title: 'Bar', value: 'bar'},
-                    {title: 'Pie', value: 'pie'}
-                ]
-            }
-        },
-        {
-            title: 'Axes',
-            name: 'axes',
-            type: 'array',
-            of: [
-                {type: 'axes'}
-            ]
+            title: 'Graph Embed Code',
+            name: 'graphCode',
+            type: 'text',
+            description: 'Publish your graph on Google Sheets and paste the code in here. Use embed option instead of link, and choose interactive'
         }
     ]
 }
