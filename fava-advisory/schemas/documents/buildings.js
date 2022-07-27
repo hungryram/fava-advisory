@@ -60,6 +60,11 @@ export default {
             type: 'blockContent'
         },
         {
+            title: 'Graphs',
+            name: 'graphs',
+            type: 'graphBlock'
+        },
+        {
             title: 'Search Engine Optimization',
             name: 'seo',
             type: 'seo'

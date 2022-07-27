@@ -19,6 +19,7 @@ export default function Building({ data }) {
             <div className="uk-light" style={{ backgroundColor: '#111820' }}>
                 <div className="uk-section-large">
                     <div className="uk-container">
+
                         <div data-uk-grid>
                             <div className="uk-width-expand@s">
                                 <h2>{frontMatter.heading}</h2>
@@ -96,48 +97,7 @@ export default function Building({ data }) {
                         <div className="uk-child-width-1-2@s" data-uk-grid>
                             <div className="uk-white">
                                 
-                                <Line
-                                    datasetIdKey='id'
-                                    options={{
-                                        color: '#fff',
-                                        xAxes: {
-                                            grid: {
-                                                drawBorder: true,
-                                                color: '#fff'
-                                            }
-                                        }
-                                    }}
-                                    data={{
-                                        labels: [2017, 2021],
-                                        datasets: [
-                                            {
-                                                label: 'Contract Signed',
-                                                data: [155, 213],
-                                                backgroundColor: 'red',
-                                                borderColor: 'red',
-                                                color: '#fff',
-                                            },
-                                            {
-                                                label: 'Median Listed Price',
-                                                data: [1741312, 1899620],
-                                                backgroundColor: 'blue',
-                                                borderColor: 'blue',
-                                                color: '#fff',
-
-
-                                            },
-                                            {
-                                                label: 'New Listings',
-                                                data: [330, 295],
-                                                backgroundColor: 'green',
-                                                borderColor: 'green',
-                                                color: '#fff',
-
-
-                                            }
-                                        ],
-                                    }}
-                                />
+                            <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQgJC09CgmnZ61IJdqswDlN17TcjGXpWcXbiC6nNlEz9WCGngfwuU3zORzB13GIOdavSqNXLjyVO3P1/pubchart?oid=1116779755&amp;format=interactive"></iframe>
                             </div>
                         </div>
                     </div>
@@ -171,6 +131,16 @@ query ($id: String) {
       cover {
         asset {
           gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+        }
+      }
+      graphs {
+        graphs {
+          graphName
+          _rawDescription
+          axes {
+            xAxis
+            yAxis
+          }
         }
       }
     }

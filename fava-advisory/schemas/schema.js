@@ -18,6 +18,13 @@ import team from "./documents/team"
 import buildings from "./documents/buildings"
 import listings from "./documents/listings"
 
+//Blocks
+import graphBlock from "./blocks/graphBlock"
+
+//Sub Blocks
+import subGraph from "./subBlock/subGraph"
+import axes from "./subBlock/axes"
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -40,6 +47,9 @@ export default createSchema({
     address,
     listingDetails,
     unit,
-    innerUnit
+    innerUnit,
+    subGraph,
+    graphBlock,
+    axes
   ]),
 })
