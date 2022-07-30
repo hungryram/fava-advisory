@@ -99,8 +99,6 @@ export default function Building({ data }) {
                                                     {node.commonCharges ? <td>{node.commonCharges}</td> : <td>-</td>}
                                                     {node.taxes ? <td>{node.taxes}</td> : <td>-</td>}
                                                     {node.status ? <td>{node.status}</td> : <td>-</td>}
-
-
                                                 </tr>
                                             )
                                         })}
