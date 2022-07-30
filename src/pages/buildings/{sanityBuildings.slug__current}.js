@@ -82,6 +82,8 @@ export default function Building({ data }) {
                                             <th>Baths</th>
                                             <th>Price</th>
                                             <th>Square Footage</th>
+                                            <th>Common Charges</th>
+                                            <th>Taxes</th>
                                             <th>Status</th>
                                         </tr>
                                     </thead>
@@ -94,6 +96,8 @@ export default function Building({ data }) {
                                                     {node.baths ? <td>{node.baths}</td> : <td>-</td>}
                                                     {node.price ? <td>{node.price}</td> : <td>-</td>}
                                                     {node.square_footage ? <td>{node.square_footage}</td> : <td>-</td>}
+                                                    {node.commonCharges ? <td>{node.commonCharges}</td> : <td>-</td>}
+                                                    {node.taxes ? <td>{node.taxes}</td> : <td>-</td>}
                                                     {node.status ? <td>{node.status}</td> : <td>-</td>}
 
 
@@ -144,6 +148,8 @@ query ($id: String) {
           price
           beds
           baths
+          commonCharges
+          taxes
           Square_footage
         }
       }
