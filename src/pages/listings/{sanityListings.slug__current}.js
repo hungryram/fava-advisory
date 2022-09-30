@@ -24,21 +24,21 @@ export default function ListingSingle({ data }) {
       />
 
       <ListingContent
-        title={frontMatter.title}
-        address={frontMatter.Address.address}
-        city={frontMatter.Address.city}
-        state={frontMatter.Address.state}
-        zip_code={frontMatter.Address.zip_code}
-        hoa={frontMatter.details.hoa}
-        price={frontMatter.details.price}
-        bed={frontMatter.details.bedrooms}
-        bath={frontMatter.details.bathrooms}
-        property={frontMatter.property_type}
-        content={frontMatter._rawContent}
+        title={frontMatter?.title}
+        address={frontMatter?.Address?.address}
+        city={frontMatter?.Address?.city}
+        state={frontMatter?.Address?.state}
+        zip_code={frontMatter?.Address?.zip_code}
+        hoa={frontMatter?.details?.hoa}
+        price={frontMatter?.details?.price}
+        bed={frontMatter?.details?.bedrooms}
+        bath={frontMatter?.details?.bathrooms}
+        property={frontMatter?.property_type}
+        content={frontMatter?._rawContent}
       />
 
       <div className="uk-section uk-position-relative">
-        <div className={Styles.galleryBox}>
+        <div className={Styles?.galleryBox}>
           <div className="uk-flex uk-flex-center">
             <div>
             <h2 className="uk-text-center photo-header">Gallery</h2>
@@ -51,15 +51,15 @@ export default function ListingSingle({ data }) {
           <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slider="center: true">
 
             <ul class="uk-slider-items uk-grid uk-grid-match" data-uk-lightbox>
-              {frontMatter.imagesGallery.map((node) => {
+              {frontMatter?.imagesGallery?.map((node) => {
                 return (
                   <>
                     <li class="uk-width-3-4">
                       <div class="uk-cover-container">
-                        <a href={node.asset.url}>
+                        <a href={node?.asset?.url}>
                           <GatsbyImage
-                            image={node.asset.gatsbyImageData}
-                            alt={node.title}
+                            image={node?.asset?.gatsbyImageData}
+                            alt={node?.title}
                             aspectRatio={1}
                           />
                         </a>

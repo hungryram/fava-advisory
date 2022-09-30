@@ -78,17 +78,17 @@ export default function ListingCard() {
                           <div className="uk-margin-small-top" data-uk-grid>
                             <div className="uk-width-1-2">
                               <h2 className="uk-margin-remove uk-h5 uk-text-bold accent">{node.title}</h2>
-                              {node.details.price &&
-                                <span>{node.details.price}</span>
+                              {node?.details?.price &&
+                                <span>{node?.details?.price}</span>
                               }
                             </div>
                             <div className="uk-width-1-2 uk-text-right">
-                              {node.details.bedrooms &&
+                              {node?.details?.bedrooms &&
 
-                                <span>{node.details.bedrooms} Beds / </span>
+                                <span>{node?.details?.bedrooms} Beds / </span>
                               }
-                              {node.details.bathrooms &&
-                                <span>{node.details.bathrooms} Bath </span>
+                              {node?.details?.bathrooms &&
+                                <span>{node.details?.bathrooms} Bath </span>
                               }
                             </div>
                           </div>
