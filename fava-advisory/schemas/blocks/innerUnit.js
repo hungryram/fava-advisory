@@ -32,6 +32,16 @@ export default {
             title: 'Status',
             name: 'status',
             type: 'string',
+        },
+        {
+            title: 'Common Charges',
+            name: 'commonCharges',
+            type: 'string',
+        },
+        {
+            title: 'Taxes',
+            name: 'taxes',
+            type: 'string',
         }
     ]
 }

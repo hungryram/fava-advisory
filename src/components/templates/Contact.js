@@ -54,8 +54,8 @@ export default function Contact({ props }) {
                                             <input className="uk-input" type="text" name="Last Name" id="lname" required />
                                         </div>
                                         <div className="uk-width-1-2@s">
-                                            <label htmlFor="phone">Phone Number*</label>
-                                            <input className="uk-input" type="text" name="Phone" id="phone" required />
+                                            <label htmlFor="phone">Phone Number (optional)</label>
+                                            <input className="uk-input" type="text" name="Phone" id="phone" />
                                         </div>
                                         <div className="uk-width-1-2@s">
                                             <label htmlFor="email">Email Address*</label>
