@@ -14,6 +14,11 @@ export default {
             type: 'blockContent'
         },
         {
+            title: 'Graph Image',
+            name: 'graphImage',
+            type: 'image'
+        },
+        {
             title: 'Graph Embed Code',
             name: 'graphCode',
             type: 'text',

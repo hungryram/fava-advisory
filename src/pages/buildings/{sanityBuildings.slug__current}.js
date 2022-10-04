@@ -4,6 +4,7 @@ import Layout from "../../components/Layout"
 import ListingBanner from "../../components/templates/ListingBanner"
 import { PortableText } from "@portabletext/react"
 import Seo from "../../components/Seo"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 export default function Building({ data }) {
     const frontMatter = data.sanityBuildings
@@ -15,10 +16,10 @@ export default function Building({ data }) {
                 cover={frontMatter.cover.asset.gatsbyImageData}
                 title={frontMatter.title}
             />
-      <Seo
-          title={seo.title_tag}
-          description={seo.meta_description}
-       />
+            <Seo
+                title={seo.title_tag}
+                description={seo.meta_description}
+            />
             <div className="uk-light" style={{ backgroundColor: '#111820' }}>
                 <div className="uk-section-large">
                     <div className="uk-container">
@@ -114,7 +115,14 @@ export default function Building({ data }) {
                             {frontMatter.graphs?.graphs.map((node) => {
                                 return (
                                     <div>
-                                        <div dangerouslySetInnerHTML={{ __html: node.graphCode }} />
+                                        <div className="uk-hidden" dangerouslySetInnerHTML={{ __html: node.graphCode }} />
+                                        <div>
+                                            {node.graphImage &&
+                                                <GatsbyImage
+                                                    image={node.graphImage.asset.gatsbyImageData}
+                                                />
+                                            }
+                                        </div>
                                         <h2>{node.graphName}</h2>
                                         <PortableText
                                             value={node._rawDescription}
@@ -163,6 +171,11 @@ query ($id: String) {
           graphName
           _rawDescription
           graphCode
+          graphImage {
+            asset {
+              gatsbyImageData(placeholder: BLURRED)
+            }
+          }
         }
       }
       marketReportFile {
