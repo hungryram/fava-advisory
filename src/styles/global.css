@@ -98,7 +98,7 @@ em {
         font-size: 2rem;
     }
 
-    .graphEmbed {
+    .graphEmbed div {
         overflow-x: scroll;
     }
 }
