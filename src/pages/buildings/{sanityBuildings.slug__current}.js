@@ -141,10 +141,10 @@ export default function Building({ data }) {
                         <h2>Contact Us</h2>
                         <p>Interested in a free, no-obligation consultation, we would love to set up a casual meet-up for coffee to discuss your plans and how we can be of service. Please complete the form below and we’ll reach out shortly!</p>
                         <div className="uk-card uk-card-default uk-padding uk-margin-large-top">
-                            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" className={`uk-grid-small ${Styles.contactForm}`} data-uk-grid action="/thank-you">
-                                <input type="hidden" name="form-name" value="contact" />
+                            <form name="contact form building" method="POST" netlify-honeypot="bot-field" data-netlify="true" className={`uk-grid-small ${Styles.contactForm}`} data-uk-grid action="/thank-you">
+                                <input type="hidden" name="form-name" value="contact form building" />
                                 <input name="bot-field" type="hidden" />
-                                <input type="hidden" name="Subject" value="Website Contact Form" />
+                                <input type="hidden" name="Subject" value={`Website Inquiry from ${frontMatter.title}`} />
                                 <div className="uk-width-1-2@s">
                                     <label htmlFor="fname">First Name*</label>
                                     <input className="uk-input" type="text" name="First Name" id="fname" required />
