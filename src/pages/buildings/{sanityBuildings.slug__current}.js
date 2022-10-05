@@ -21,9 +21,9 @@ export default function Building({ data }) {
                 title={seo.title_tag}
                 description={seo.meta_description}
             />
-            <div className="uk-light" style={{ backgroundColor: '#111820' }}>
+            <div style={{ backgroundColor: '#111820' }}>
                 <div className="uk-section-large">
-                    <div className="uk-container">
+                    <div className="uk-container uk-light">
 
                         <div data-uk-grid>
                             <div className="uk-width-expand@s">
@@ -73,7 +73,7 @@ export default function Building({ data }) {
                     </div>
                 </div>
                 {frontMatter.units &&
-                    <div className="uk-section">
+                    <div className="uk-section uk-light">
                         <div className="uk-container">
                             <div class="uk-overflow-auto">
                                 <table class="uk-table uk-table-small uk-table-divider uk-table-justify uk-table-middle uk-text-small">
@@ -110,7 +110,7 @@ export default function Building({ data }) {
                         </div>
                     </div>
                 }
-                <div className="uk-section">
+                <div className="uk-section uk-light">
                     <div className="uk-container uk-container-xlarge">
                         <div className="uk-child-width-1-2@m uk-flex-center uk-text-center graphEmbed" data-uk-grid data-uk-height-match>
                             {frontMatter.graphs?.graphs.map((node) => {
@@ -136,10 +136,12 @@ export default function Building({ data }) {
                 </div>
                 <div className="uk-section">
                     <div className="uk-container">
-                        <h2>About Fava Advisory</h2>
-                        <p>Fava Advisory is a dynamic group of full-time real estate professionals who provide a highly personalized advisory service. We focus on curated real estate advice based on current marketing trends and creative marketing strategies. With over 30 years of combined experience in New York City and abroad, our business has grown through a referral network of repeat clients and we are well-equipped to handle all of your real estate needs. As downtown specialists, we have a true pulse on the market as it relates to your home, and you can feel confident in our ability to help you navigate the selling, buying, or renting process to maximize your goals.</p>
-                        <h2>Contact Us</h2>
-                        <p>Interested in a free, no-obligation consultation, we would love to set up a casual meet-up for coffee to discuss your plans and how we can be of service. Please complete the form below and we’ll reach out shortly!</p>
+                        <div className="uk-light">
+                            <h2>About Fava Advisory</h2>
+                            <p>Fava Advisory is a dynamic group of full-time real estate professionals who provide a highly personalized advisory service. We focus on curated real estate advice based on current marketing trends and creative marketing strategies. With over 30 years of combined experience in New York City and abroad, our business has grown through a referral network of repeat clients and we are well-equipped to handle all of your real estate needs. As downtown specialists, we have a true pulse on the market as it relates to your home, and you can feel confident in our ability to help you navigate the selling, buying, or renting process to maximize your goals.</p>
+                            <h2>Contact Us</h2>
+                            <p>Interested in a free, no-obligation consultation, we would love to set up a casual meet-up for coffee to discuss your plans and how we can be of service. Please complete the form below and we’ll reach out shortly!</p>
+                        </div>
                         <div className="uk-card uk-card-default uk-padding uk-margin-large-top">
                             <form name="contact form building" method="POST" netlify-honeypot="bot-field" data-netlify="true" className={`uk-grid-small ${Styles.contactForm}`} data-uk-grid action="/thank-you">
                                 <input type="hidden" name="form-name" value="contact form building" />
