@@ -97,7 +97,7 @@ export default function Building({ data }) {
                                                     {node.beds ? <td>{node.beds}</td> : <td>-</td>}
                                                     {node.baths ? <td>{node.baths}</td> : <td>-</td>}
                                                     {node.price ? <td>{node.price}</td> : <td>-</td>}
-                                                    {node.square_footage ? <td>{node.square_footage}</td> : <td>-</td>}
+                                                    {node.Square_footage ? <td>{node.Square_footage}</td> : <td>-</td>}
                                                     {node.commonCharges ? <td>{node.commonCharges}</td> : <td>-</td>}
                                                     {node.taxes ? <td>{node.taxes}</td> : <td>-</td>}
                                                     {node.status ? <td>{node.status}</td> : <td>-</td>}
