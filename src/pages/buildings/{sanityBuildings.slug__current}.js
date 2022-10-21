@@ -112,6 +112,9 @@ export default function Building({ data }) {
                 }
                 <div className="uk-section uk-light">
                     <div className="uk-container uk-container-xlarge">
+                        <div className="uk-margin-large-bottom uk-text-center">
+                            <h2 className="uk-h2">Building Information</h2>
+                        </div>
                         <div className="uk-child-width-1-2@m uk-flex-center uk-text-center graphEmbed" data-uk-grid data-uk-height-match>
                             {frontMatter.graphs?.graphs.map((node) => {
                                 return (
