@@ -143,7 +143,7 @@ export default function Building({ data }) {
                             <h2>About Fava Advisory</h2>
                             <p>Fava Advisory is a dynamic group of full-time real estate professionals who provide a highly personalized advisory service. We focus on curated real estate advice based on current marketing trends and creative marketing strategies. With over 30 years of combined experience in New York City and abroad, our business has grown through a referral network of repeat clients and we are well-equipped to handle all of your real estate needs. As downtown specialists, we have a true pulse on the market as it relates to your home, and you can feel confident in our ability to help you navigate the selling, buying, or renting process to maximize your goals.</p>
                             <h2>Contact Us</h2>
-                            <p>Interested in a free, no-obligation consultation, we would love to set up a casual meet-up for coffee to discuss your plans and how we can be of service. Please complete the form below and we’ll reach out shortly!</p>
+                            <p>Interested in a free, no-obligation consultation? We would love to set up a casual meet-up for coffee to discuss your plans and how we can be of service. Please complete the form below and we’ll reach out shortly!</p>
                         </div>
                         <div className="uk-card uk-card-default uk-padding uk-margin-large-top">
                             <form name="contact form building" method="POST" netlify-honeypot="bot-field" data-netlify="true" className={`uk-grid-small ${Styles.contactForm}`} data-uk-grid action="/thank-you">
